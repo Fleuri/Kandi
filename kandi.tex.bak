@@ -33,6 +33,7 @@
 \usepackage{amsfonts,amsmath,amssymb,amsthm,booktabs,color,enumitem,graphicx}
 \usepackage[pdftex,hidelinks]{hyperref}
 \usepackage{setspace}
+\usepackage{multicol}
 
 % Automatically set the PDF metadata fields
 \makeatletter
@@ -127,13 +128,38 @@
 \mainmatter       % clear page, start arabic page numbering
 
 \section{Johdanto}
-
-% Write some science here.
 \onehalfspacing
-Tietokoneohjelma on sarja ohjeita, jotka on kirjoitettu jollain ohjelmointikielellä ja joilla ohjataan tietokoneen toimintaa. \newline
-Software, eli ohjelmisto käsittää tietokoneohjelman tai -ohjelmia sekä kaiken niihin liittyvän informaation ja materiaalin, kuten tietokannat ja dokumentaation. \newline Tietokonelaitteisto, eli hardware käsittää tietokoneen fyysiset osat, kuten prosessorin ja kovalevyn. Laitteistoa tarvitaan ohjelmistojen suorittamiseen ja laitteisto tarvitsee toimiakseen toimintaohjeet matalan tason tietokoneohjelmina. Käytännössä tietokoneohjelmistot ja -ohjelmat sekä tietokonelaitteisto eivät ole käyttökelpoisia yksinään, vaan kumpaakin tarvitaan toisen järkevään käyttöön.
 
-Watts S. Humphrey on määritellyt ohjelmistotuotannon tarkoittavan kurinalaista laadukkaiden ohjelmistojen tuottamista hyödyntäen niin luonnontieteellisiä, matemaattisia kuin insinööritaitojenkin periaatteita ja käytänteitä\cite{Humphrey:1988:SEP:75110.75122}. IEEE Computer Society määrittelee termin viittaavan kurinalaiseen, systemaattiseen ja arvioitavissa olevaan lähestymistapaan ohjelmistojen tuotannossa, käytössä ja ylläpidossa\cite{swebok}. Ilkka Haikala ja Jukka Märijärvi summaavat määrittelyjen 
+Tämä kandidaatintutkielma tarkastelee ohjelmistotuotantomenetelmien kehittymistä ohjelmistokehittämisen alkuajoista nykypäivään ja lähitulevaisuuteen. Se käsittelee erilaisia ohjelmistotuotantomenetelmiä kronologisesti. Jokaisen menetelmän kohdalla pyrin vastaamaan seuraaviin kysymyksiin:
+
+\begin{itemize}
+\item Mistä ohjelmistotuotantomenetelmässä on kyse?
+\item Miksi sitä käytetään/käytettiin ja mitä hyötyä siitä on/oli?
+\item Mitkä olivat sen heikkoudet?
+\end{itemize}
+
+Ohjelmistotuotannon eri osa-alueita tarkastellaan tutkielmassa ohjelmistotuotantomenetelmiä määrittävinä piirteinä. Tämä tarkoittaa sitä, että tarkasteltaessa esimerkiksi miten vaatimusmäärittely toteutetaan jossain tietyssä ohjelmistotuotantomenetelmässä, keskitytään prosessin konkreettisen toteutuksen sijasta sen asemaan ja erityispiirteisiin menetelmän kontekstissa. \linebreak
+
+\section{Peruskäsitteistöä}
+Software eli ohjelmisto käsittää tietokoneohjelman tai -ohjelmia sekä kaiken niihin liittyvän informaation ja materiaalin kuten tietokannat ja dokumentaation. \newline Tietokonelaitteisto eli hardware käsittää tietokoneen fyysiset osat kuten prosessorin ja kovalevyn. Laitteistoa tarvitaan ohjelmistojen suorittamiseen ja laitteisto tarvitsee toimiakseen toimintaohjeet matalan tason tietokoneohjelmina. Käytännössä tietokoneohjelmistot ja -ohjelmat sekä tietokonelaitteisto eivät ole käyttökelpoisia yksinään, vaan kumpaakin tarvitaan toisen järkevään käyttöön.
+
+Termi software engineering, suomeksi ohjelmistotuotanto, alkoi esiintyä kirjallisuudessa 1960-luvun puolivälissä. Termi itsessään on ollut usein keskustelun ja väittelyn kohteena ja ohjelmistotuotannon kuulumista insinööritaitoihin on kyseenalaistettu. \cite{DBLP:reference/se/Grier10,haikala2003ohjelmistotuotanto,mahoney04}
+Watts S. Humphrey on määritellyt ohjelmistotuotannon tarkoittavan kurinalaista laadukkaiden ohjelmistojen tuottamista hyödyntäen niin luonnontieteellisiä, matemaattisia kuin insinööritaitojenkin periaatteita ja käytänteitä\cite{Humphrey:1988:SEP:75110.75122}. IEEE Computer Society määrittelee termin viittaavan kurinalaiseen, systemaattiseen ja arvioitavissa olevaan lähestymistapaan ohjelmistojen tuotannossa, käytössä ja ylläpidossa\cite{swebok}. Ilkka Haikala ja Jukka Märijärvi tulkitsevat määrittelyjen tarkoittavan ohjelmistotyötä, jonka tuloksena syntyvät järjestelmät täyttävät käyttäjiensä kohtuulliset toiveet ja odotukset ja tämän lisäksi valmistuvat laadittujen aikataulujen ja kustannusarvioiden puitteissa\cite{haikala2003ohjelmistotuotanto}.
+
+Ohjelmistotuotantoon kuuluvat kaikki ohjelmistotuotantoprosessin osa-alueet. Haikala ja Märijärvi \cite{haikala2003ohjelmistotuotanto} määrittelevät ne seuraavasti:
+
+\begin{description}
+\item[Määrittely] sisältää asiakasvaatimusten analyysin ja niistä johdetaan ohjelmistovaatimukset.
+\item[Suunnittelu] pitää sisällään ohjelmiston määrittelyssä jäsenneltyjen toiminnallisuuksien ja ominaisuuksien suunnittelun
+\item[Toteutus] tarkoitaa ohjelmiston ohjelmointia sekä testauksen toteutusta
+\item[Testaus] pyrkii karsimaan ohjelmistosta ohjelmointivirheitä ja muita vikoja. Tyypillisiä testaustapoja ovat yksikkötestaus, integraatiotestaus ja debuggaus.
+\item[Dokumentointi] käsittää ohjelmistoprojektin aikana tuotettavan kirjallisen materiaalin, kuten projektisuunnitelmat, testaussuunnitelmat ja jopa ohjelmakoodin kommentoinnin.
+\item[Käyttöönotto] ja \textbf{ylläpito} ovat asiakkaan ongelmien ratkomista, virheiden korjaamista ja tarvittaessa uusien ominaisuuksien lisäämistä.  
+\item[Laatujärjestelmällä] ja \textbf{laadunvarmistuksella} on tarkoitus taata, että ohjelmisto täyttää käyttäjän ja asiakkaan toiveet ja odotukset.
+\item[Projektinhallinta] on työkalu ohjelmistotuotantoprojektin organisointiin. Suuret ohjelmistoprojektit koostuvat usein useasta rinnakkain tai peräkkäin etenevistä osaprojekteista ja tällöin niiden järjestelmällinen hallinta voi olla keskeistä koko projektin onnistumisen kannalta. 
+\item[Tuotteenhallinta:] Usein kaupallisella ohjelmistolla on useita eri konfiguraatioita jolloin se voidaan aina räätälöidä yksilöllisesti kullekin asiakkaalle sopivaksi. Tuotteenhallinnan tarkoitus on varmistaa, että asiakkaalla on tarvitsemansa toimiva versio ohjelmistosta.
+
+\end{description}
 
 
 % --- References ---

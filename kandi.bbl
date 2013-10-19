@@ -1,0 +1,64 @@
+\begin{thebibliography}{1}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {swebok}
+\btxnamefont {\btxlastnamefont {Abran}, Alain}, \btxnamefont {\btxlastnamefont
+  {Moore}, James\btxfnamespacelong W.}, \btxnamefont {\btxlastnamefont
+  {Bourque}, Pierre}, \btxnamefont {\btxlastnamefont {Dupuis},
+  Robert}\btxandcomma {} \btxandlong {}\ \btxnamefont {\btxlastnamefont
+  {Tripp}, Leonard\btxfnamespacelong L.}\btxauthorcolon\ \btxtitlefont {Guide
+  to the Software Engineering Body of Knowledge (SWEBOK)}.
+\newblock \btxpublisherfont {IEEE}, 2004.
+\newblock {\latintext \btxurlfont{http://www.swebok.org/}}, ISO Technical
+  Report ISO/IEC TR 19759.
+
+\bibitem {DBLP:reference/se/Grier10}
+\btxnamefont {\btxlastnamefont {Grier}, David\btxfnamespacelong
+  Alan}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Software engineering:
+  History}{Software Engineering: History}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Encyclopedia of Software Engineering},
+  \btxpublisherfont {\btxpageslong {}\ 1119--1126}. 2010.
+
+\bibitem {haikala2003ohjelmistotuotanto}
+\btxnamefont {\btxlastnamefont {Haikala}, I.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {M{\"a}rij{\"a}rvi}, J.}\btxauthorcolon\ \btxtitlefont
+  {Ohjelmistotuotanto}.
+\newblock Korkeakoulu-sarja. \btxpublisherfont {Satku}, 2003\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {9789521404863}}}.
+\newblock {\latintext
+  \btxurlfont{http://books.google.fi/books?id=xIVaAAAACAAJ}}.
+
+\bibitem {Humphrey:1988:SEP:75110.75122}
+\btxnamefont {\btxlastnamefont {Humphrey}, W.\btxfnamespacelong
+  S.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {The software engineering
+  process: definition and scope}{The software engineering process: definition
+  and scope}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 4th international
+  software process workshop on Representing and enacting the software process},
+  ISPW '88, \btxpageslong {}\ 82--83, New York, NY, USA, 1988.
+  \btxpublisherfont {ACM}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {0-89791-314-0}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/75110.75122}}.
+
+\bibitem {mahoney04}
+\btxnamefont {\btxlastnamefont {Mahoney}, Michael\btxfnamespacelong
+  S.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Finding a history for
+  software engineering}{Finding a History for Software Engineering}}.
+\newblock \btxjournalfont {IEEE Annals of the History of Computing},
+  (1):8--19\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {1058-6180}}}.
+\newblock {\latintext
+  \btxurlfont{http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=1278847}}.
+
+\end{thebibliography}

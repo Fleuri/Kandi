@@ -1,0 +1,20 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: kandi.aux
+The style file: babplain-lf.bst
+Database file #1: references-fi.bib
+I was expecting a `,' or a `}'---line 41 of file references-fi.bib
+ : 
+ : @book{haikala2003ohjelmistotuotanto,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Illegal end of database file---line 77 of file references-fi.bib
+ :   url = {http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=1278847},
+ :                                                                          
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "DBLP:reference/se/Grier10"
+refers to entry "DBLP:reference/se/2010", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:reference/se/2010"
+Warning--empty language in swebok
+Warning--empty publisher in DBLP:reference/se/Grier10
+Warning--there's a number but no volume in mahoney04
+Warning--empty year in mahoney04
+(There were 3 error messages)

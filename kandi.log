@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  19 OCT 2013 11:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  19 OCT 2013 19:47
 entering extended mode
 **kandi.tex
-(D:\Documents\Kandityö\kandi.tex
+(D:\Documents\Kandi\kandi.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -13,7 +13,7 @@ german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
 ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
 an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
-(D:\Documents\Kandityö\tktltiki2.cls
+(D:\Documents\Kandi\tktltiki2.cls
 Document Class: tktltiki2 2013/04/28 v1.04 Template for theses and seminar pape
 rs at University of Helsinki CS department
 ("D:\MiKTeX 2.9\tex\latex\tools\calc.sty"
@@ -637,9 +637,57 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 ("D:\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
+("D:\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count124
+\mult@box=\box29
+\multicol@leftmargin=\dimen144
+\c@unbalance=\count125
+\c@collectmore=\count126
+\doublecol@number=\count127
+\multicoltolerance=\count128
+\multicolpretolerance=\count129
+\full@width=\dimen145
+\page@free=\dimen146
+\premulticols=\dimen147
+\postmulticols=\dimen148
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box30
+\last@line=\box31
+\mult@rightbox=\box32
+\mult@grightbox=\box33
+\mult@gfirstbox=\box34
+\mult@firstbox=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\c@columnbadness=\count130
+\c@finalcolumnbadness=\count131
+\last@try=\dimen149
+\multicolovershoot=\dimen150
+\multicolundershoot=\dimen151
+\mult@nat@firstbox=\box53
+\colbreak@box=\box54
+\multicol@sort@counter=\count132
+)
 ("D:\MiKTeX 2.9\tex\latex\babelbib\babelbib.sty"
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-\c@btxromaniannumeral=\count124
+\c@btxromaniannumeral=\count133
 )
 ("D:\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -649,24 +697,24 @@ Package tocbibind Info: The document has section divisions on input line 50.
 Package tocbibind Note: Using section or other style headings.
 
 )
-\c@lau=\count125
-\c@ong=\count126
- (D:\Documents\Kandityö\kandi.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 112.
+\c@lau=\count134
+\c@ong=\count135
+ (D:\Documents\Kandi\kandi.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 113.
+LaTeX Font Info:    ... okay on input line 113.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 113.
  ("D:\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -698,7 +746,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 112.
+LaTeX Info: Redefining \microtypecontext on input line 113.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -714,33 +762,33 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 ("D:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen144
-\scratchbox=\box29
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\scratchcounter=\count136
+\scratchdimen=\dimen152
+\scratchbox=\box55
+\nofMPsegments=\count137
+\nofMParguments=\count138
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen145
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen153
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
 \everyMPtoPDFconversion=\toks33
 )
-\AtBeginShipoutBox=\box30
-Package hyperref Info: Link coloring OFF on input line 112.
+\AtBeginShipoutBox=\box56
+Package hyperref Info: Link coloring OFF on input line 113.
  ("D:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("D:\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count133
+\c@section@level=\count142
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 113.
+LaTeX Info: Redefining \pageref on input line 113.
+LaTeX Info: Redefining \nameref on input line 113.
 
-(D:\Documents\Kandityö\kandi.out) (D:\Documents\Kandityö\kandi.out)
+(D:\Documents\Kandi\kandi.out) (D:\Documents\Kandi\kandi.out)
 \@outlinefile=\write3
 
 babelbib: Set bibliography fall-back language to finnish
@@ -752,7 +800,7 @@ babelbib extension \btxifchangecaseoff added to \extrasfinnish
 babelbib: Load BibTeX extensions \bibsfinnish for finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
-Package hyperref Info: Option `pageanchor' set `false' on input line 120.
+Package hyperref Info: Option `pageanchor' set `false' on input line 121.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -787,13 +835,13 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 120.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\sideindent=\skip55
-\lowerspace=\skip56
+\sideindent=\skip57
+\lowerspace=\skip58
 [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 120.
+Package hyperref Info: Option `pageanchor' set `true' on input line 121.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -830,46 +878,125 @@ Package hyperref Info: Option `pageanchor' set `true' on input line 120.
 
 
 ]
-(D:\Documents\Kandityö\kandi.toc)
+(D:\Documents\Kandi\kandi.toc)
 \tf@toc=\write4
  [2
 
 ]
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 136.
 
-LaTeX Warning: Citation `Humphrey:1988:SEP:75110.75122' on page 1 undefined on 
-input line 136.
+ ("D:\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
+File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 136
+.
 
-No file kandi.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 162.
+("D:\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 136.
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
 [1
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 162.
- (D:\Documents\Kandityö\kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 162.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 162.
-Package rerunfilecheck Info: File `kandi.out' has not changed.
-(rerunfilecheck)             Checksum: 827FC65B76D1F75D3A26F42B653C52AA;44.
+] [2] (D:\Documents\Kandi\kandi.bbl
+babelbib: Using the BibTeX style's default font for `name'.
+babelbib: Using the BibTeX style's default font for `lastname'.
+babelbib: Using the BibTeX style's default font for `title'.
+babelbib: Using the BibTeX style's default font for `jtitle'.
+babelbib: Using the BibTeX style's default font for `etal'.
+babelbib: Using the BibTeX style's default font for `journal'.
+babelbib: Using the BibTeX style's default font for `volume'.
+babelbib: Using the BibTeX style's default font for `ISBN'.
+babelbib: Using the BibTeX style's default font for `ISSN'.
+babelbib: Using the BibTeX style's default font for `url'.
+babelbib: Using the BibTeX style's default font for `numeral'.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 24.
+("D:\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 24.
+ ("D:\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 24.
+ ("D:\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 24.
 
 
-LaTeX Warning: There were undefined references.
+("D:\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 162.
+("D:\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+("D:\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
+
+("D:\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+("D:\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+))
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+
+(D:\Documents\Kandi\kandi.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
+
+
+Package rerunfilecheck Warning: File `kandi.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `kandi.out':
+(rerunfilecheck)             Before: 38959ECB1960F856D9CFD23099879A42;91
+(rerunfilecheck)             After:  F4482D219C0EF0D3012C736C60545658;153.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 9404 strings out of 493921
- 136476 string characters out of 3152895
- 267446 words of memory out of 3000000
- 12538 multiletter control sequences out of 15000+200000
- 26765 words of font info for 35 fonts, out of 3000000 for 9000
+ 9760 strings out of 493921
+ 142420 string characters out of 3152895
+ 273547 words of memory out of 3000000
+ 12785 multiletter control sequences out of 15000+200000
+ 45774 words of font info for 74 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,8n,35p,610b,498s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}<D:/MiKTeX 2.9/fonts/type1/public
-/lm/lmbx12.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><D:/MiKTeX 2.9/fo
-nts/type1/public/lm/lmr12.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb>
-Output written on kandi.pdf (4 pages, 120703 bytes).
+ 32i,8n,35p,836b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/lm
+/lm-mathsy.enc}<D:/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><D:/MiKTeX 2.9/f
+onts/type1/public/lm/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
+D:/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/
+lm/lmri12.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fo
+nts/type1/public/lm/lmtt12.pfb>
+Output written on kandi.pdf (6 pages, 186046 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 8201 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 PDF objects out of 1000 (max. 8388607)
+ 15 named destinations out of 1000 (max. 500000)
+ 13841 words of extra memory for PDF output out of 14400 (max. 10000000)
 
