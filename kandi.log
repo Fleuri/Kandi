@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  19 OCT 2013 19:47
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  20 OCT 2013 19:20
 entering extended mode
 **kandi.tex
 (D:\Documents\Kandi\kandi.tex
@@ -791,6 +791,10 @@ LaTeX Info: Redefining \nameref on input line 113.
 (D:\Documents\Kandi\kandi.out) (D:\Documents\Kandi\kandi.out)
 \@outlinefile=\write3
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\newline' on input line 113.
+
 babelbib: Set bibliography fall-back language to finnish
 ("D:\MiKTeX 2.9\tex\latex\babelbib\finnish.bdf"
 File: finnish.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
@@ -897,7 +901,7 @@ File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 136.
 
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
 
@@ -958,45 +962,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 ("D:\MiKTeX 2.9\tex\latex\microtype\mt-msb.cfg"
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+) [3] [4])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 208.
+ [5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 208.
 
 (D:\Documents\Kandi\kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
-
-
-Package rerunfilecheck Warning: File `kandi.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `kandi.out':
-(rerunfilecheck)             Before: 38959ECB1960F856D9CFD23099879A42;91
-(rerunfilecheck)             After:  F4482D219C0EF0D3012C736C60545658;153.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 208.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 208.
+Package rerunfilecheck Info: File `kandi.out' has not changed.
+(rerunfilecheck)             Checksum: DC09F2E45F2D05524D7584E7DD848E75;575.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 208.
  ) 
 Here is how much of TeX's memory you used:
- 9760 strings out of 493921
- 142420 string characters out of 3152895
- 273547 words of memory out of 3000000
- 12785 multiletter control sequences out of 15000+200000
- 45774 words of font info for 74 fonts, out of 3000000 for 9000
+ 9791 strings out of 493921
+ 142746 string characters out of 3152895
+ 273668 words of memory out of 3000000
+ 12798 multiletter control sequences out of 15000+200000
+ 46229 words of font info for 79 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,8n,35p,836b,535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,8n,35p,836b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/lm
 /lm-mathsy.enc}<D:/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><D:/MiKTeX 2.9/f
 onts/type1/public/lm/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
 D:/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/
 lm/lmri12.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fo
 nts/type1/public/lm/lmtt12.pfb>
-Output written on kandi.pdf (6 pages, 186046 bytes).
+Output written on kandi.pdf (8 pages, 195505 bytes).
 PDF statistics:
- 96 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 13841 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 141 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
+ 13897 words of extra memory for PDF output out of 14400 (max. 10000000)
 
