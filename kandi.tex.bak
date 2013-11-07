@@ -74,7 +74,7 @@
 % The following commands define the information used to generate title and
 % abstract pages. The following entries should be always specified:
 
-\title{Ohjelmistotuotantomenetelmät}
+\title{Ohjelmistotuotantomenetelmien kehittyminen\newline 1950-luvulta nykypäivään}
 \author{Lauri Suomalainen}
 \date{\today}
 \level{Kandidaatintutkielma}
@@ -150,7 +150,7 @@ Luku 6 keskittyy prototyyppaamiseen ohjelmistotuotantomenetelmänä. Erityisesti
 
 Luvussa 7 otetaan tarkasteluun ketterät ohjelmistotuotantomenetelmät. Vaikka ketterä ohjelmistokehitys on kattokäsitteenä monelle erilaiselle menetelmälle kuten XP ja Kanban, käsittelen Scrumia tyyppiesimerkkinä, sillä se on kaikista ketteristä menetelmistä suosituin ja tunnetuin.
 
-Luku 8 toimii yhteenvetona tutkielmalle ja tarkastelen siinä myös mahdollisia lähitulevaisuuden kehityssuuntia.
+Luku 8 on tutkielman yhteenveto ja tarkastelen siinä myös mahdollisia lähitulevaisuuden kehityssuuntia.
 
 Ohjelmistotuotannon eri osa-alueita tarkastellaan tutkielmassa ohjelmistotuotantomenetelmiä määrittävinä piirteinä. Tämä tarkoittaa sitä, että tarkasteltaessa esimerkiksi miten vaatimusmäärittely toteutetaan jossain tietyssä ohjelmistotuotantomenetelmässä, keskitytään prosessin konkreettisen toteutuksen sijasta sen asemaan ja erityispiirteisiin menetelmän kontekstissa. \linebreak
 
@@ -176,6 +176,10 @@ Ohjelmistotuotantoon kuuluvat kaikki ohjelmistotuotantoprosessin osa-alueet. Hai
 Ohjelmistotuotantomenetelmä on koko ohjelmistotuotantoprosessin kattava viitekehys, joka ohjaa prosessin osa-alueitten käytännön toteutusta.
 
 \section{Ohjelmistotuotannon alkutaival}
+1940-luvun puolivälistä 1950-luvun lopun ensimmäiset ohjelmoitavat elektronisesti tallentavat tietokoneet olivat nykystandardeilla mitattuna valtavan kokoisia, hitaita ja muistikapasiteetiltaan mitättömiä. Rajoitustensa vuoksi tietokoneohjelmointia pidettiin toissijaisena ja yksinkertaisena toimena verrattuna itse tietokonelaitteiston suunnitteluun ja rakentamiseen. \cite{DBLP:reference/se/Grier10} Lähemmin ohjelmoinnin kanssa työskenteleville alkoi selvitä ohjelmoinnin monimutkaisuus ja ongelmat, kuten rajoitetun muistin hallinta ja ohjelmien välinen interaktio. Tarve järjestelmälliselle ohjelmien tuotannolle oli syntymässä.
+
+
+
 \section{Perinteiset ohjelmistotuotantomenetelmät}
 \section{Inkremetaaliset ja iteratiiviset menetelmät}
 \section{Prototyyppaus}
