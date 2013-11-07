@@ -101,8 +101,8 @@
 @article{Fowler05,
   author = {Fowler, Martin},
   title = {The New Methodology},
-  year = {2005},
-url = {http://martinfowler.com/articles/newMethodology.html},
+year = {2005}
+  url = {http://martinfowler.com/articles/newMethodology.html},
 }
 
 @inproceedings{Royce1970,

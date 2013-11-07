@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {1}Johdanto}{1}{section.1}
 \contentsline {section}{\numberline {2}Perusk\IeC {\"a}sitteist\IeC {\"o}\IeC {\"a}}{2}{section.2}
 \contentsline {section}{\numberline {3}Ohjelmistotuotannon alkutaival}{4}{section.3}
-\contentsline {section}{\numberline {4}Perinteiset ohjelmistotuotantomenetelm\IeC {\"a}t}{4}{section.4}
-\contentsline {section}{\numberline {5}Inkremetaaliset ja iteratiiviset menetelm\IeC {\"a}t}{4}{section.5}
-\contentsline {section}{\numberline {6}Prototyyppaus}{4}{section.6}
-\contentsline {section}{\numberline {7}Ketter\IeC {\"a}t menetelm\IeC {\"a}t}{4}{section.7}
-\contentsline {section}{\numberline {8}Ohjelmistojen kehitys t\IeC {\"a}n\IeC {\"a}\IeC {\"a}n ja huomenna}{4}{section.8}
-\contentsline {section}{L\IeC {\"a}hteet}{4}{section*.2}
+\contentsline {section}{\numberline {4}Perinteiset ohjelmistotuotantomenetelm\IeC {\"a}t}{5}{section.4}
+\contentsline {section}{\numberline {5}Inkremetaaliset ja iteratiiviset menetelm\IeC {\"a}t}{5}{section.5}
+\contentsline {section}{\numberline {6}Prototyyppaus}{5}{section.6}
+\contentsline {section}{\numberline {7}Ketter\IeC {\"a}t menetelm\IeC {\"a}t}{5}{section.7}
+\contentsline {section}{\numberline {8}Ohjelmistojen kehitys t\IeC {\"a}n\IeC {\"a}\IeC {\"a}n ja huomenna}{5}{section.8}
+\contentsline {section}{L\IeC {\"a}hteet}{5}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}
