@@ -34,6 +34,7 @@
 \usepackage[pdftex,hidelinks]{hyperref}
 \usepackage{setspace}
 \usepackage{multicol}
+\usepackage{float}
 
 % Automatically set the PDF metadata fields
 \makeatletter
@@ -190,12 +191,26 @@ Perinteisillä ohjelmistotuotantomenetelmillä viitataan suunnitelmavetoisiin tu
 
 Vesiputousmalli koostuu toisiaan seuraavista työvaiheista, joista seuraava aloitetaan aina edellisen valmistuttua. Ajalleen tyypillisesti malli muistuttaa insinööritieteiden suunnitteluprosessia, jossa ennen projektin konkreettista toteuttamista tehdään perinpohjaiset suunnitelmat dokumentointeineen. Niin Benningtonin kuin Roycenkin mallin ensimmäiset askeleet liittyvät projektin vaatimusten määrittelyyn ja kartoitukseen. Roycen mallin ensimmäiset askeleet ovat järjestelmävaatimukset ja ohjelmistovaatimukset\cite{Royce1970}. Benington esittää vaiheet vähän laajemmin aloittaen korkeatasoisella ja yleisluontoisella toimintasuunnitelmavaiheella. Vaiheeseen kuuluu asiakasvaatimukset sekä projektin ajalliset ja budjetilliset vaatimukset. Toimintasuunnitelmavaihetta seuraa toiminnalliset määrittelyt ja laitteistospesifikaatiot. \cite{Benington:1987:PLC:41765.41799} Näiden pohjalta määritellään itse ohjelmiston toiminnalliset-, tehokkuus-, käyttö- ja laatuvaatimukset. Royce painotti dokumentaation tärkeyttä projektin onnistumisen kannalta ja alkuvaiheiden valmistuttua tuloksena tulisi olla määrittelydokumentti ja alustava suunnitteludokumentti. Kun vaatimukset on määritelty siirrytään analyysivaiheeseen, jossa selvitetään vaatimusten tekniset yksityiskohdat. Analyysin perusteella suunnitellaan lopulta itse ohjelmiston yksityiskohdat, joihin kuuluvat muun muassa ohjelmiston arkkitehtuuri, rajapinnat, käyttöliittymä ja testaus. Roycen mukaan suunnitteluvaiheen lopuksi dokumentoituna tulisi olla ohjelmiston lopullinen suunnitelma, käyttöliittymäsuunnitelma sekä ohjelmiston testaussuunnitelma. Ohjelmointivaihe toteutetaan suunnitelmien pohjalta ja niitä seuraten. Ohjelmointivaiheen ollessa ohitse siirrytään testausvaiheeseen, jossa ohjelman eri moduulit testataan yhdessä ja erikseen testaussuunnitelman pohjalta. Lopputuotoksena saadaan dokumentti testauksen tuloksista. Viimeinen vaihe on ohjelmiston käyttöönotto ja ylläpito. Tähän vaiheeseen kuuluu mahdollisten käytössä löydettyjen virheiden korjaaminen ja ohjelmiston muuttaminen tai siihen ominaisuuksien lisääminen mikäli tarve sille syntyy.
 
+\begin{figure}[ht!]
+\centering
+\floatstyle{boxed}
+\includegraphics[width=150mm]{Diagram1.png}
+\caption{Wilson Roycen näkemystä mukaileva vesiputousmalli}
+\label{overflow}
+\end{figure}
+
+
 \subsection{Vesiputousmallin ongelmia}
 
-Koska vesiputousmallille on haettu vaikutteita insinööritieteistä, muistuttaa se paljolti esimerkiksi rakennussuunnitteluprosessia: Siltaa rakentaessa ennen itse rakentamisen aloittamista suunnitellaan sillan arkkitehtuuri, tehdään lujuuslaskelmat, allokoidaan tarvittavat resurssit ja dokumentoidaan suunnitelmat tarkasti. Tarkasti dokumentoiduilla suunnitelmilla itse rakentamisvaihe voitaisiinkin siirtää ulkopuolisen tahon vastuulle ja näin rakennusalalla usein tehdäänkin. \cite{Fowler05} Rakentaminen nähdään triviaalina ja mekaanisena ohjeiden seuraamisena. Martin Fowlerin mukaan menetelmän ongelmana ohjelmistotuotannossa on se, että suunnitelmien virheet ja heikkoudet ilmenevätkin juuri ohjelmointi- ja testausvaiheissa jolloin ohjelmiston toteutus ei olekaan enää kovin suoraviivaista. Juuri suunnittelun korostamisessa piilee myös yksi vesiputousmallin kritisoiduimmista piirteistä.
+Koska vesiputousmallille on haettu vaikutteita insinööritieteistä, muistuttaa se paljolti esimerkiksi rakennussuunnitteluprosessia: Siltaa rakentaessa ennen itse rakentamisen aloittamista suunnitellaan sillan arkkitehtuuri, tehdään lujuuslaskelmat, allokoidaan tarvittavat resurssit ja dokumentoidaan suunnitelmat tarkasti. Tarkasti dokumentoiduilla suunnitelmilla itse rakentamisvaihe voitaisiinkin siirtää ulkopuolisen tahon vastuulle ja näin rakennusalalla usein tehdäänkin. \cite{Fowler05} Rakentaminen nähdään triviaalina ja mekaanisena ohjeiden seuraamisena. Martin Fowlerin mukaan menetelmän ongelmana ohjelmistotuotannossa on se, että suunnitelmien virheet ja heikkoudet ilmenevätkin juuri ohjelmointi- ja testausvaiheissa jolloin ohjelmiston toteutus ei olekaan enää kovin suoraviivaista. Juuri suunnittelun korostamisessa piilee myös yksi vesiputousmallin kritisoiduimmista piirteistä. Vesiputousmalli nojaa kokonaisvaltaiseen suunnitteluun ja suunnitelman noudattamiseen, mutta ohjelmistojen kehittäminen tapahtuu usein nopeasti muuttuvassa liiketoimintaympäristössä. Käytännössä on usein mahdotonta selvittää kaiken kattavia ja ulkoisille muutospaineille immuuneja järjestelmä- ja ohjelmistovaatimuksia. \cite{Sommerville10} 
+
+Joskus todelliset vaatimuksetkin selviävät vasta ohjelmistoa oikeassa ympäristössä käytettäessä. Teoriassa hyvä suunnitelma voi osoittautua huonoksi myöhemmissä konkreettemmissa työvaiheissa, mutta vesiputousmallin rakenne vaikeuttaa muutoksien tekemistä suunnitelmiin. Managing the Development of Large Software Systems -artikkelissa Royce esittääkin, että vaiheiden välillä tulisi olla takaisinkytkentöjä, jolloin uutta tietoa saadessa voitaisiin palata korjaamaan aikaisempien työvaiheiden virheitä. \cite{Royce1970} Lisäksi Royce ehdotti, että prosessi kannattaisi suorittaa kahdesti. Esimerkiksi neljänkymmenen kuukauden projektissa ensimmäiset kymmenen kuukautta voisi Roycen mukaan käyttää prototyypin rakentamiseen, jonka pohjalta loput kolmekymmentä kuukautta käytettäiisiin varsinaisen ohjelmiston kehittämiseen.
+
+Toisaalta mikäli ohjelmiston vaatimukset pystytään määrittelemään tarpeeksi tarkasti, esimerkiksi ohjelmiston ollessa sidoksissa johonkin valmiiseen laitteistoon, voi vesiputousmalli olla hyvinkin toimiva ratkaisu suuren työryhmän työskentelyn ohjaukseen.
 
 
 \section{Inkremetaaliset ja iteratiiviset menetelmät sekä prototyyppaus}
+
 \section{Ketterät menetelmät}
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}
 
