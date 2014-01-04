@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  20 DEC 2013 14:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  3 JAN 2014 18:42
 entering extended mode
 **kandi.tex
 (D:\Documents\Kandi\kandi.tex
@@ -944,135 +944,24 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 137.
  [1
 
-] [2] [3]
-
-LaTeX Warning: Citation `Dijkstra:1979:HP:1241515.1241525' on page 4 undefined 
-on input line 180.
-
-
-LaTeX Warning: Citation `Dijkstra:1979:HP:1241515.1241525' on page 4 undefined 
-on input line 181.
-
-
-LaTeX Warning: Citation `Dijkstra:1979:HP:1241515.1241525' on page 4 undefined 
-on input line 182.
-
-
-LaTeX Warning: Citation `CHAOS1994' on page 4 undefined on input line 182.
-
-
-LaTeX Warning: Citation `Dijkstra:1979:HP:1241515.1241525' on page 4 undefined 
-on input line 182.
-
-[4]
-
-LaTeX Warning: Citation `Ruparelia:2010:SDL:1764810.1764814' on page 5 undefine
-d on input line 188.
-
-
-LaTeX Warning: Citation `Benington:1987:PLC:41765.41799' on page 5 undefined on
- input line 188.
-
-
-LaTeX Warning: Citation `Royce1970' on page 5 undefined on input line 192.
-
-
-LaTeX Warning: Citation `Benington:1987:PLC:41765.41799' on page 5 undefined on
- input line 192.
-
-[5]
-\@float@every@figure=\toks36
- <Diagram1.png, id=110, 1532.72626pt x 827.09pt>
+] [2] [3] [4] [5]
+<Diagram1.png, id=123, 1532.72626pt x 827.09pt>
 File: Diagram1.png Graphic file (type png)
  <use Diagram1.png>
-Package pdftex.def Info: Diagram1.png used on input line 198.
+Package pdftex.def Info: Diagram1.png used on input line 197.
 (pdftex.def)             Requested size: 426.79134pt x 230.29634pt.
 
-! Undefined control sequence.
-\@tempf ... \@parboxrestore \normalsize \@fs@capt 
-                                                  {\@nameuse {fnum@#1}}{\ign...
-l.199 ...en näkemystä mukaileva vesiputousmalli}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 198--201
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 197--198
  [][] 
  []
 
-! Undefined control sequence.
-\float@makebox ...ze =#1 \@parboxrestore \@fs@pre 
-                                                  \@fs@iftopcapt \ifvoid \@f...
-l.201 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+[6] [7pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1}) has been already used, duplicate ignored
 
-! Undefined control sequence.
-\float@makebox ...restore \@fs@pre \@fs@iftopcapt 
-                                                  \ifvoid \@floatcapt \else ...
-l.201 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\float@makebox ...nvbox \@floatcapt \par \@fs@mid 
-                                                  \fi \unvbox \@currbox \els...
-l.201 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Extra \else.
-\float@makebox ...mid \fi \unvbox \@currbox \else 
-                                                  \unvbox \@currbox \ifvoid ...
-l.201 \end{figure}
-                  
-I'm ignoring this; it doesn't match any \if.
-
-! Extra \fi.
-\float@makebox ...mid \unvbox \@floatcapt \fi \fi 
-                                                  \par \@fs@post \vskip \z@ }
-l.201 \end{figure}
-                  
-I'm ignoring this; it doesn't match any \if.
-
-! Undefined control sequence.
-\float@makebox ...loatcapt \fi \fi \par \@fs@post 
-                                                  \vskip \z@ }
-l.201 \end{figure}
-                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `Fowler05' on page 6 undefined on input line 206.
-
-
-LaTeX Warning: Citation `Sommerville10' on page 6 undefined on input line 206.
-
-[6]
-
-LaTeX Warning: Citation `Royce1970' on page 7 undefined on input line 208.
-
-(D:\Documents\Kandi\kandi.bbl
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.208 
+       <D:/Documents/Kandi/Diagram1.png>] (D:\Documents\Kandi\kandi.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1092,41 +981,42 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [7 <D:/Documents/Kandi/Diagram1.png>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 238.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 238.
+ [8] [9]
+
+Package babelbib Warning: Handling of numerical editions not handled
+(babelbib)                by language finnish for edition `9' on input line 122
+.
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
+ [10]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
  (D:\Documents\Kandi\kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 238.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 238.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
 (rerunfilecheck)             Checksum: D4FC4D904F36A46ED8E303D78D10432E;703.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 238.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
  ) 
 Here is how much of TeX's memory you used:
- 9897 strings out of 493921
- 144086 string characters out of 3152895
- 278091 words of memory out of 3000000
+ 9905 strings out of 493921
+ 144252 string characters out of 3152895
+ 278415 words of memory out of 3000000
  12867 multiletter control sequences out of 15000+200000
- 50448 words of font info for 93 fonts, out of 3000000 for 9000
+ 50357 words of font info for 92 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,8n,35p,2223b,594s stack positions out of 5000i,500n,10000p,200000b,50000s
-{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/lm
-/lm-mathsy.enc}<D:/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><D:/MiKTeX 2.9/f
-onts/type1/public/lm/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><
-D:/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/
-lm/lmri12.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fo
-nts/type1/public/lm/lmtt12.pfb>
-Output written on kandi.pdf (11 pages, 229978 bytes).
+ 32i,8n,35p,2223b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
+{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{D:/MiKTeX 2.9/fonts/enc/dvip
+s/lm/lm-rm.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-mathsy.enc}<D:/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><D:
+/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><D:/MiKTeX 2.9/fonts/type1/public/l
+m/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/MiKTeX 2.9/fonts
+/type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><D:/M
+iKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm
+/lmtt12.pfb>
+Output written on kandi.pdf (13 pages, 247637 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 38 named destinations out of 1000 (max. 500000)
  14422 words of extra memory for PDF output out of 17280 (max. 10000000)
 

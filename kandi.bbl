@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
   \providebibliographyfont{name}{}%
   \providebibliographyfont{lastname}{}%
   \providebibliographyfont{title}{\emph}%
@@ -23,6 +23,34 @@
 \newblock \btxpublisherfont {IEEE}, 2004.
 \newblock {\latintext \btxurlfont{http://www.swebok.org/}}, ISO Technical
   Report ISO/IEC TR 19759.
+
+\bibitem {Benington:1987:PLC:41765.41799}
+\btxnamefont {\btxlastnamefont {Benington}, H.\btxfnamespacelong
+  D.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Production of large
+  computer programs}{Production of Large Computer Programs}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 9th International
+  Conference on Software Engineering}, ICSE '87, \btxpageslong {}\ 299--310,
+  Los Alamitos, CA, USA, 1987. \btxpublisherfont {IEEE Computer Society
+  Press}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-89791-216-0}}}.
+\newblock {\latintext
+  \btxurlfont{http://dl.acm.org/citation.cfm?id=41765.41799}}.
+
+\bibitem {Dijkstra:1979:HP:1241515.1241525}
+\btxnamefont {\btxlastnamefont {Dijkstra}, E.}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Classics in software engineering}{Classics in software
+  engineering}}.
+\newblock \btxchapterlong {}\ The humble programmer, \btxpageslong {}\
+  111--125. \btxpublisherfont {Yourdon Press}, Upper Saddle River, NJ, USA,
+  1979\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-917072-14-6}}}.
+\newblock {\latintext
+  \btxurlfont{http://dl.acm.org/citation.cfm?id=1241515.1241525}}.
+
+\bibitem {Fowler05}
+\btxnamefont {\btxlastnamefont {Fowler}, Martin}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {The new methodology}{The New Methodology}}.
+\newblock 2005.
+\newblock {\latintext
+  \btxurlfont{http://martinfowler.com/articles/newMethodology.html}}.
 
 \bibitem {DBLP:reference/se/Grier10}
 \btxnamefont {\btxlastnamefont {Grier}, David\btxfnamespacelong
@@ -52,6 +80,13 @@
   {0-89791-314-0}}}.
 \newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/75110.75122}}.
 
+\bibitem {larman03}
+\btxnamefont {\btxlastnamefont {Larman}, C.} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Basili}, V.R.}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Iterative and incremental development: A brief
+  history}{Iterative and Incremental Development: A Brief History}}.
+\newblock \btxjournalfont {IEEE Computer}, 36(6):47--56.
+
 \bibitem {mahoney04}
 \btxnamefont {\btxlastnamefont {Mahoney}, Michael\btxfnamespacelong
   S.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Finding a history for
@@ -60,5 +95,37 @@
   (1):8--19\ifbtxprintISSN {, \mbox{\btxISSN~\btxISSNfont {1058-6180}}}.
 \newblock {\latintext
   \btxurlfont{http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=1278847}}.
+
+\bibitem {Royce1970}
+\btxnamefont {\btxlastnamefont {Royce}, Winston\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Managing the development
+  of large software systems: concepts and techniques}{Managing the development
+  of large software systems: concepts and techniques}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proc. IEEE WESTCON}. \btxpublisherfont
+  {IEEE Press}, \btxprintmonthyear{.}{August}{1970}{long}.
+\newblock Reprinted in Proc. Int'l Conf. Software Engineering ({ICSE}) 1989,
+  ACM Press, pp. 328-338.
+
+\bibitem {Ruparelia:2010:SDL:1764810.1764814}
+\btxnamefont {\btxlastnamefont {Ruparelia}, Nayan\btxfnamespacelong
+  B.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Software development
+  lifecycle models}{Software Development Lifecycle Models}}.
+\newblock \btxjournalfont {SIGSOFT Softw. Eng. Notes}, 35(3):8--13,
+  \btxprintmonthyear{.}{5}{2010}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0163-5948}}}.
+\newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1764810.1764814}}.
+
+\bibitem {Sommerville10}
+\btxnamefont {\btxlastnamefont {Sommerville}, Ian}\btxauthorcolon\
+  \btxtitlefont {Software Engineering}.
+\newblock \btxpublisherfont {Addison-Wesley}, Harlow, England,
+  \btxeditionnumlong {9}{}, 2010\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-0-13-703515-1}}}.
+
+\bibitem {CHAOS1994}
+\btxnamefont {\btxlastnamefont {{The Standish Group}}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Chaos report}{Chaos Report}}, 1995.
+\newblock \url{http://www.cs.nmt.edu/~cs328/reading/Standish.pdf} -- last
+  visited $15^{th}$ of June, 2008.
 
 \end{thebibliography}

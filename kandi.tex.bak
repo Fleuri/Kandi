@@ -211,6 +211,12 @@ Toisaalta mikäli ohjelmiston vaatimukset pystytään määrittelemään tarpeek
 
 \section{Inkremetaaliset ja iteratiiviset menetelmät sekä prototyyppaus}
 
+Inkrementaalisia ja iteratiivisia ohjelmistotuotantomenetelmiä pidetään yleensä vastauksena vesiputousmallin ongelmiin. Ominaista inkrementaalisille ja iteratiivisille malleille onkin dokumenttijohtoisen lineaarisesti etenevän tuotantoprosessin välttäminen hyödyntäen muun muassa aikaan sidottuja iteraatioita, evolutiivista kehittämistä ja palautteen mukaan ohjautuvaa kehittämistä. \cite{larman03}
+Tunnettuja inkrementaalisia ja iteratiivisia ohjelmistokehitysmenetelmiä ovat muun muassa Extreme Programming eli XP, Rapid Application Development eli RAD, Spiraalimalli ja Rational Unified Process eli RUP. Kahta jälkimmäista tarkastelen lähemmin vielä myöhemmin.
+
+Iteratiiviset ja inkrementaaliset menetelmät nousivat suuren yleisön tietoisuuteen joulukuussa 1994 kun Yhdysvaltain puolustusministeriö julkaisi uuden standardin Mil-Std-498, jonka keskeisin muutos aikaisempaan oli iteratiivisten ja inkrementaalisten ohjelmistokehitysmenetelmien salliminen vesiputousmallin lisäksi. Kuitenkin malleja oli tunnettu ja käytetty paljon aikaisemmin. Basil ja Larman siteeraavat artikkelissaan \textit{Iterative and Incremental Development: A Brief History} NASAn Project Mercuryssa vuonna 1957 työskennellyttä Gerald M. Weinbergia, jonka mukaan projektissa hyödynnettiin erottamattomasti XP:n kaltaista iteratiivista ohjelmistotuotantomenetelmää. 
+
+
 \section{Ketterät menetelmät}
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}
 
