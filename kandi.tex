@@ -229,7 +229,14 @@ Barry Boehmin spiraalimalli on iteraatioittain etenevä ohjelmistotuotantomenete
 \label{overflow}
 \end{figure}
 
-Spiraalimalli koostuu neljästä työvaiheesta, joita toistetaan tarvittava
+Jokainen kierros spiraalissa edustaa yhtä vaihetta ohjelmistoprosessissa.  Yksi kierros koostuu neljästä järjestyksessä toistuvasta työvaiheesta \cite{Sommerville10}:
+
+\begin{enumerate}
+\item \textbf{Tavoitteen määrittely:} Työvaiheen tavoitteet määritellään, vaiheeseen ja tuotteeseen kohdistuvat rajoitteet ja riskit tunnistetaan. Laaditaan toimintasuunnitelma sekä riskeistä riippuen vaihtoehtoisia suunnitelmia.
+\item \textbf{Riskien arviointi ja minimointi:} Jokainen tunnistettu riski analysoidaan yksityiskohtaisesti ja toimitaan riskien uhkien pienentämiseksi. Esimerkiksi, jos riskinä on ohjelmiston vaatimusten epätarkkuus, voidaan riskien minimoimiseksi alkaa kehittää ohjelmiston prototyyppimallia. 
+\item \textbf{Kehitys ja validointi:} Riskien arvioinnin jälkeen valitaan järjestelmälle tuotantomalli. Jos esimerkiksi käyttöliittymään liittyvät riskit ovat hallitsevia, voi hyvä malli kehittämiselle olla evolutiivinen prototyyppaus kun taas tilanteessa, jossa alijärjestelmien integrointi pääohjelmistoon on suurin riskien lähde, voi vesiputousmalli olla paras lähestymistapa.
+\item \textbf{Seuraavan vaiheen suunnittelu: } Projekti katselmoidaan projektille keskeisten ihmisten ja organisaatioiden toimesta ja mikäli päätetään suorittaa seuraava spiraalin kierros, se sekä siihen varatut resurssit suunnitellaan.
+\end{enumerate}
 
 
 

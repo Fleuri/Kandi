@@ -219,7 +219,7 @@ Iteratiiviset ja inkrementaaliset menetelmät nousivat suuren yleisön tietoisuu
 
 \subsection{Spiraalimalli}
 
-Barry Boehmin spiraalimalli on iteraatioittain etenevä ohjelmistotuotantomenetelmä. Spiraalimallille ominaista on kehittämisen ohjautuminen riskien ja niiden hallinan mukaan, kun esimerkiksi vesiputousmallissa kehitys ohjautuu suunnitelmien ja määrittelyjen mukaan. Spiraalimalli on siitäkin erikoinen menetelmä, että sen puitteissa pystyy käyttämään niin lineaarisisia, inkrementaalisia kuin evolutiivisia työprosesseja.
+Barry Boehmin spiraalimalli on iteraatioittain etenevä ohjelmistotuotantomenetelmä. Spiraalimallille ominaista on kehittämisen ohjautuminen riskien ja niiden hallinan mukaan, kun esimerkiksi vesiputousmallissa kehitys ohjautuu suunnitelmien ja määrittelyjen mukaan. Spiraalimalli on siitäkin erikoinen menetelmä, että sen puitteissa pystyy käyttämään niin lineaarisisia, inkrementaalisia kuin evolutiivisia työprosesseja riippuen ohjelmiston sen hetkisestä tilasta ja siihen liittyvistä riskeistä ja suunnitelmista. 
 
 \begin{figure}[ht!]
 \centering
@@ -228,6 +228,17 @@ Barry Boehmin spiraalimalli on iteraatioittain etenevä ohjelmistotuotantomenete
 \caption{Barry Boehmin spiraalimalli}
 \label{overflow}
 \end{figure}
+
+Jokainen kierros spiraalissa edustaa yhtä vaihetta ohjelmistoprosessissa.  Yksi kierros koostuu neljästä järjestyksessä toistuvasta työvaiheesta \cite{Sommerville10}:
+
+\begin{enumerate}
+\item \textbf{Tavoitteen määrittely:} Työvaiheen tavoitteet määritellään, vaiheeseen ja tuotteeseen kohdistuvat rajoitteet ja riskit tunnistetaan. Laaditaan toimintasuunnitelma sekä riskeistä riippuen vaihtoehtoisia suunnitelmia.
+\item \textbf{Riskien arviointi ja minimointi:} Jokainen tunnistettu riski analysoidaan yksityiskohtaisesti ja toimitaan riskien uhkien pienentämiseksi. Esimerkiksi, jos riskinä on ohjelmiston vaatimusten epätarkkuus, voidaan riskien minimoimiseksi alkaa kehittää ohjelmiston prototyyppimallia. 
+\item \textbf{Kehitys ja validointi:} Riskien arvioinnin jälkeen valitaan järjestelmälle tuotantomalli. Jos esimerkiksi käyttöliittymään liittyvät riskit ovat hallitsevia, voi hyvä malli kehittämiselle olla evolutiivinen prototyyppaus kun taas tilanteessa, jossa alijärjestelmien integrointi pääohjelmistoon on suurin riskien lähde, voi vesiputousmalli olla paras lähestymistapa.
+\item \textbf{Seuraavan vaiheen suunnittelu: } Projekti katselmoidaan projektille keskeisten ihmisten ja organisaatioiden toimesta ja mikäli päätetään suorittaa seuraava spiraalin kierros, se sekä siihen varatut resurssit suunnitellaan.
+\end{enumerate}
+
+
 
 \section{Ketterät menetelmät}
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}
