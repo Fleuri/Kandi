@@ -238,6 +238,29 @@ Jokainen kierros spiraalissa edustaa yhtä vaihetta ohjelmistoprosessissa.  Yksi
 \item \textbf{Seuraavan vaiheen suunnittelu: } Projekti katselmoidaan projektille keskeisten ihmisten ja organisaatioiden toimesta ja mikäli päätetään suorittaa seuraava spiraalin kierros, se sekä siihen varatut resurssit suunnitellaan.
 \end{enumerate}
 
+Riski on spiraalimallin keskeisimpiä käsitteitä. Yksinkertaisesti ilmaistuna riskillä tarkoitetaan tapahtumaa jota halutaan välttää ohjelmistotuotantoprojektissa; Riski on jokin asia joka voi mennä pieleen \cite{Sommerville10}. Riskit jaetaan kolmeen eri kategoriaan, mutta käytännössä osa ohjelmistotuotannon riskeistä voi kuulua usampaankin näistä:
+
+\begin{enumerate}
+\item \textbf{Projektiriskit} ovat projektin aikatauluun tai resursseihin vaikuttavia riskejä. Tällaisia voivat esimerkiksi olla työntekijöiden lähtö projektista tai muutokset projektin johdossa tai organisaatiossa.
+\item \textbf{Tuoteriskit} vaikuttavat kehitettävän ohjelmiston laatuun ja suorituskykyyn. Tällaisia voivat olla esimerkiksi kolmannen osapuolen tuottaman ohjelmiston osan virheellisyys tai toimimattomuus.
+\item \textbf{Liikeriskit} vaikuttavat ohjelmistoa kehittävään tai tuottavaan organisaatioon. Tällaisia riskejä voivat olla esimerkiksi markkina- ja kilpailutilanteen muutokset tai ohjelmistoprojektissa käytetyn teknologian vanhentuminen. 
+\end{enumerate}
+
+Boehm neuvoo spiraalimallissa käytettävän riskienhallintamenetelmää, jossa aluksi tunnistetaan ja priorisoidaan kymmenen tärkeintä riskia (Tosin tämä luku ei ole absoluuttinen ja voi vaihdella projektista riippuen) ja niitä varten laaditaan toimintasuunnitelmat. Priorisoitujen riskien listaa päivitetään iteraatioittain ja riskin realisoituessa toimitaan sille laaditun suunnitelman mukaan\cite{Boehm:1988:SMS:45797.45801}. Ian Somervillen mukaan riskinhallintasuunnitelmat voidaan jakaa kolmeen tyyppin: välttämis-, minimointi- ja valmiusstrategioihin\cite{Sommerville10}. Välttämisstrategioilla pyritään pienentämään riskin realisoitumismahdollisuutta. Jos riskinä on esimerkiksi vialliset komponentit, voi välttämisstrategiana toimia komponenttien alihankinta luotettavalta valmistajalta. Minimointistrategioilla pyritään pienentämään riskin toteutuessa aiheutuvaa haittaa ja vahinkoa. Esimerkiksi sairastapausten riskin vaikutusta voidaan minimoida organisoimalla työskentely niin, että kukin kehittäjä ei ole yksinään vastuussa jostain osa-alueesta, vaan tarvittaessa joku toinen voi jatkaa sairaana olevan kehittäjän työtä. Valmiusstrategiat ovat toimintastrategioita jolla varaudutaan pahimpaan tapaukseen riskien realisoituessa. Ohjenuoraksi strategioiden valinnassa Somerville neuvoo lähtökohtaisesti välttämään riskejä. Jos se ei ole mahdollista, niin riskien realisoitumismahdollisuus, ja viimekädessä vaikutukset, tulee minimoida.
+
+\subsection{Spiraalimallin etuja ja heikkouksia}
+
+Artikkelissaan \textit{A Spiral Model of Software Development and Enhancement} Barry Boehm myös analysoi spiraalimallin hyviä ja huonoja puolia. Spiraalimallin eduiksi hän laskee mahdollisuuden hyödyntää monen olemassaolevan ohjelmistotuotanntomenetelmän hyviä puolia ja välttää huonoja\cite{Boehm:1988:SMS:45797.45801}. Vaihtoehtojen tarkastelu rohkaisee jo olemssa olevan ohjelmiston uusiokäyttöön ja riskianalyysi sekä iteratiivinen malli edesauttavat ohjelmiston muokattavuutta ja laajennettavuutta sekä yleistä laatua. Riskien tuominen keskiöön välttää perinteisempien menetelmien sudenkuopat, jossa helpot asiat suoritetaan ensin riskialttiimpien ja vaikeampien jääden myöhemmiksi\cite{Wolff:1989:MRS:107446.107478}. 
+
+Tekstissään Boehm tunnistaa myös mallissa joitain heikkouksia. Koska malli nojaa vahvasti riskien hallintaan, se olettaa käyttäjänsä hallitsevan koko riskien hallinnan konseptin hyvin\citep{Boehm:1988:SMS:45797.45801}. Lisäksi osa mallissa ja sen vaiheissa käytettävistä tekniikoista ja toimintatavoista eivät ole kovin tarkkaan määritelty. Esimerkiksi Gerard Wolff moitti menetelmää selkeyden puutteesta ja suosittelikin Boehmin spiraalimalliin suhtauduttavan vain viitteellisenä kehyksenä projektisuunnitelmalla\cite{Wolff:1989:MRS:107446.107478}. 
+
+ 
+\subsection{Rational Unified Process}
+
+Rational Unified Process eli RUP on Rational Software -yhtiön 90-luvulla kehittämä prosessimalli. Se on iteratiivinen ohjelmistotuotantomenetelmä joka hyödyntää vahvasti erilaisia malleja, kuten UML, ja käyttötapauksia\cite{Ruparelia:2010:SDL:1764810.1764814}. Mark Aked korostaa myös RUPin riskiohjautuvuutta\cite{Aked03}.
+RUP rakentuu  
+
+
 
 
 \section{Ketterät menetelmät}

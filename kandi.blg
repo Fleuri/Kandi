@@ -1,11 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: kandi.aux
 The style file: babplain-lf.bst
 Database file #1: references-fi.bib
-Illegal end of database file---line 251 of file references-fi.bib
- : 
- : 
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 A bad cross reference---entry "DBLP:reference/se/Grier10"
 refers to entry "DBLP:reference/se/2010", which doesn't exist
 Warning--I didn't find a database entry for "DBLP:reference/se/2010"
@@ -13,7 +8,7 @@ Warning--empty language in swebok
 Warning--empty booktitle in Dijkstra:1979:HP:1241515.1241525
 Warning--empty journal in Fowler05
 Warning--empty publisher in DBLP:reference/se/Grier10
-Warning--empty year in larman03
 Warning--there's a number but no volume in mahoney04
 Warning--empty year in mahoney04
-(There were 2 error messages)
+Warning--empty booktitle in Wolff:1989:MRS:107446.107478
+(There was 1 error message)

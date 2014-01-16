@@ -35,6 +35,16 @@
 \newblock {\latintext
   \btxurlfont{http://dl.acm.org/citation.cfm?id=41765.41799}}.
 
+\bibitem {Boehm:1988:SMS:45797.45801}
+\btxnamefont {\btxlastnamefont {Boehm}, Barry\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {A spiral model of
+  software development and enhancement}{A Spiral Model of Software Development
+  and Enhancement}}.
+\newblock \btxjournalfont {Computer}, 21(5):61--72,
+  \btxprintmonthyear{.}{5}{1988}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0018-9162}}}.
+\newblock {\latintext \btxurlfont{http://dx.doi.org/10.1109/2.59}}.
+
 \bibitem {Dijkstra:1979:HP:1241515.1241525}
 \btxnamefont {\btxlastnamefont {Dijkstra}, E.}\btxauthorcolon\ \btxtitlefont
   {\btxifchangecase {Classics in software engineering}{Classics in software
@@ -85,7 +95,7 @@
   {\btxlastnamefont {Basili}, V.R.}\btxauthorcolon\ \btxjtitlefont
   {\btxifchangecase {Iterative and incremental development: A brief
   history}{Iterative and Incremental Development: A Brief History}}.
-\newblock \btxjournalfont {IEEE Computer}, 36(6):47--56.
+\newblock \btxjournalfont {IEEE Computer}, 36(6):47--56, 2003.
 
 \bibitem {mahoney04}
 \btxnamefont {\btxlastnamefont {Mahoney}, Michael\btxfnamespacelong
@@ -127,5 +137,16 @@
   \btxtitlefont {\btxifchangecase {Chaos report}{Chaos Report}}, 1995.
 \newblock \url{http://www.cs.nmt.edu/~cs328/reading/Standish.pdf} -- last
   visited $15^{th}$ of June, 2008.
+
+\bibitem {Wolff:1989:MRS:107446.107478}
+\btxnamefont {\btxlastnamefont {Wolff}, J.\btxfnamespacelong
+  G.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Software risk
+  management}{Software Risk Management}}.
+\newblock \btxchapterlong {}\ The Management of Risk in System Development:
+  \&Ldquo;Project SP\&Rdquo; and the \&Ldquo;New Spiral Model\&Rdquo;,
+  \btxpageslong {}\ 481--491. \btxpublisherfont {IEEE Press}, Piscataway, NJ,
+  USA, 1989\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0-8186-8906-4}}}.
+\newblock {\latintext
+  \btxurlfont{http://dl.acm.org/citation.cfm?id=107446.107478}}.
 
 \end{thebibliography}
