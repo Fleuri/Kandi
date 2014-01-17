@@ -257,13 +257,42 @@ Tekstissään Boehm tunnistaa myös mallissa joitain heikkouksia. Koska malli no
  
 \subsection{Rational Unified Process}
 
-Rational Unified Process eli RUP on Rational Software -yhtiön 90-luvulla kehittämä prosessimalli. Se on iteratiivinen ohjelmistotuotantomenetelmä joka hyödyntää vahvasti erilaisia malleja, kuten UML, ja käyttötapauksia\cite{Ruparelia:2010:SDL:1764810.1764814}. Mark Aked korostaa myös RUPin olevan riskiohjautuva\cite{Aked03}.
-RUP määrittelee työprosessinsa etenevän iteraatioittain. Jokainen iteraatio sisältää neljä vaihetta: Aloitusvaihe eli inception, kehittelyvaihe eli elaboration, rakennusvaihe eli construction ja siirtymävaihe eli transition. RUP määrittää myös spesifisti sen, mitä jokaiseen vaiheeseen kuuluu. 
+Rational Unified Process eli RUP on Rational Software -yhtiön 90-luvulla kehittämä prosessimalli. IBM:n ostettua Rational Softwaren vuonna 2003, on IBM ollut menetelmän keskeisin käyttäjä ja äänitorvi, tarjoten muunmuassa RUPiin liittyviä konsultointipalveluja. 
+RUP on iteratiivinen ohjelmistotuotantomenetelmä joka hyödyntää vahvasti erilaisia malleja, kuten UML, ja käyttötapauksia\cite{Ruparelia:2010:SDL:1764810.1764814}. Mark Aked korostaa myös RUPin olevan riskiohjautuva\cite{Aked03}.
+RUP määrittelee työprosessinsa etenevän iteraatioittain. Jokainen iteraatio sisältää neljä vaihetta: Aloitusvaihe eli inception, tarkentamisvaihe eli elaboration, rakennusvaihe eli construction ja siirtymävaihe eli transition. RUP määrittää myös spesifisti sen, mitä jokaiseen vaiheeseen kuuluu. 
 Aloitusvaiheessa projektille määritellään siihen liittyvät sidosryhmät ja -henkilöt ja muut järjestelmän kanssa tekemisissä olevat tahot. Näitä tietoja käyttäen tarkastellaan projektin taloudellista arvoa ja päätetään jatkosta. Mikäli projekti on taloudellisesti tuottamaton, voidaan sen kehitys lopettaa tässä vaiheessa. 
 Kehittelyvaiheen tarkoituksena on selvittää projektiin liittyvät vaatimukset ja ongelmat sekä määritellä arkkitehtuurinen viitekehys, projektisuunnitelma sekä keskeisimmät riskit ja tuottaa näistä dokumentaatio. UML-kaavioiden laatimista on erikseen korostettu.
 Rakennusvaiheeseen kuuluu käytännön suunnittelu, ohjelmointi ja testaus. Vaiheen lopussa valmiina tulisi olla toimivaa ohjelmistoa ja siihen liittyvä dokumentaatio valmiina käyttöönottoa varten.
 Viimeinen vaihe on siirtymävaihe, jossa ohjelmisto siirretään todelliseeen käyttöympäristöönsä.
 
+
+
+RUPissa iteraatioita voi toteuttaa kahdella tavalla. Yleisempi tapa muista menetelmistä on suorittaa kaikki neljä vaihetta peräkkäin jokaista iteraatiota kohti aina siirtymävaiheesta takaisin aloitusvaiheeseen siirtyen ja inkrementaalisesti ohjelmistoa rakentaen. Toisaalta myös vaiheiden sisällä voidaan suorittaa iteraatioita. Tästä esimerkki kuvassa 3.
+
+RUP myös painottaa valikoitujen parhaitten käytäntöjen hyödyntämistä ohjelmistokehityksessä. Niitä on listattu kuusi\cite{rational01}: 
+
+\begin{enumerate}
+\item \textbf{Kehitä iteratiivisesti.} Iteratiivinen kehitys vähentää riskejä ja tekee projektin etenemisestä ja tilasta helposti seurattavan.
+\item \textbf{Hallitse vaatimuksia.} RUP suosittelee käyttötapausten käyttöä vaatimusten selvittämiseksi.
+\item \textbf{Käytä komponentteihin perustuvaa ohjelmistoarkkitehtuuria} Komponenttien hyödyntäminen on selkeää, joustavaa ja muutoksia sekä ohjelmakoodin uudelleenkäyttöä mahdollistavaa.
+\item \textbf{Mallinna ohjelmisto visuaalisesti} RUP suosittelee UML-mallinnuskielen käyttöä.
+\item \textbf{Varmista ohjelmiston laatu} Laadunvalvontaa tulisi tehdä jatkuvasti ja koko työryhmän toimesta.
+\item \textbf{Hallitse muutoksia ohjelmistoon} Muutosta tulisi hallita niin, että jokainen muutos on hyväksyttävä osa ohjelmistoa ja ne integroituvat ohjelmistoon ristiriidatta.
+\end{enumerate}
+
+\begin{figure}[ht!]
+\centering
+\floatstyle{boxed}
+\includegraphics[width=150mm]{RUP.jpg}
+\caption{RUP-prosessin kuvaus}
+\label{overflow}
+\end{figure}
+
+\subsection{RUPin etuja ja heikkouksia}
+
+RUPin etuna on eri työvaiheiden ja niiden työnkulun erottaminen sekä ohjelmiston käyttöönoton sisällyttäminen työvaiheisiin\cite{Sommerville10}. Lisäksi RUP on tarkasti dokumentoitu, sen iteratiivisuus ja komponenttiarkkitehtuurin suosiminen tuottavat laadukasta ohjelmakoodia.
+
+RUPin heikkouksia ovat sen huono soveltuminen todella laajoihin ohjelmistoprojekteihin\cite{Ramsin:2008:PRO:1322432.1322435, Ruparelia:2010:SDL:1764810.1764814}. RUP ei myöskään huomioi valmiin ohjelmiston ylläpitoa ja käytöstäpoistoa\cite{Ramsin:2008:PRO:1322432.1322435}. 
 
 
 \section{Ketterät menetelmät}

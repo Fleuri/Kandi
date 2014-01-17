@@ -1,11 +1,140 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2013.10.18)  18 OCT 2013 21:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdftex 2013.10.18)  17 JAN 2014 19:06
 entering extended mode
-**D:/Documents/Kandityö/references-fi.bib
-(D:/Documents/Kandityö/references-fi.bib)
-*
+**D:/Documents/Kandi/references-fi.bib
+(D:/Documents/Kandi/references-fi.bib
+Overfull \hbox (132.99532pt too wide) in paragraph at lines 50--66
+\tenrm 10.1109/MC.1987.1663532, issn = 0018-9162, pub-lisher = IEEE Com-puter S
+o-ci-ety Press, url = http://dx.doi.org/10.1109/MC.1987.1663532|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 1
+.\tenrm 0
+.\tenrm .
+.\tenrm 1
+.\tenrm 1
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--66
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+
+Overfull \hbox (154.10757pt too wide) in paragraph at lines 88--97
+\tenrm thor = Haikala, I. and Marijarvi, J., se-ries = Korkeakoulu-sarja, isb
+n = 9789521404863, url = http://books.google.fi/books?id=xIVaAAAACAAJ|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm t
+.\tenrm h
+.\tenrm o
+.\tenrm r
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 88--97
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+
+Overfull \hbox (19.99619pt too wide) in paragraph at lines 98--115
+\tenrm 0-89791-314-0, lo-ca-tion = De-von, United King-dom, numpages = 2, url =
+ http://doi.acm.org/10.1145/75110.75122|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 0
+.\tenrm -
+.\discretionary
+.\tenrm 8
+.\tenrm 9
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--115
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+
+Overfull \hbox (27.05183pt too wide) in paragraph at lines 116--133
+\tenrm 17T05:46:55.000+0200, biburl = http://www.bibsonomy.org/bibtex/21d8f67f9
+502273fc16bbe9cf21fec9ea/neilernst,|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm 1
+.\tenrm 7
+.\tenrm T
+.\tenrm 0
+.\tenrm 5
+.etc.
+
+
+Overfull \hbox (58.16295pt too wide) in paragraph at lines 116--133
+\tenrm doi = http://doi.ieeecomputersociety.org/10.1109/MAHC.2004.1278847, in-t
+er-hash = 2ae30dfecbb0286f3da430c402750b84,|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm d
+.\tenrm o
+.\tenrm i
+.\glue 3.33333 plus 1.66666 minus 1.11111
+.\tenrm =
+.etc.
+
+
+Overfull \hbox (149.30081pt too wide) in paragraph at lines 116--133
+\tenrm IEEE Com-puter So-ci-ety, times-tamp = 2007-06-17T05:46:55.000+0200, url
+ = http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=1278847|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm I
+.\tenrm E
+.\tenrm E
+.\tenrm E
+.\glue 3.33333 plus 1.66498 minus 1.11221
+.etc.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--133
+
+
+\hbox(0.0+0.0)x469.75499
+.\glue(\rightskip) 0.0
+
+
+Overfull \hbox (232.3197pt too wide) in paragraph at lines 134--152
+\tenrm ACM Press, pp. 328-338, added-at = 2008-07-07T16:45:32.000+0200, biburl 
+= http://www.bibsonomy.org/bibtex/2d7b39bfd9f37320591ce07f407fbb50d/pdeleenh,|
+
+\hbox(7.5+2.5)x469.75499, glue set - 1.0
+.\tenrm A
+.\kern-0.27779
+.\tenrm C
+.\tenrm M
+.\glue 3.33333 plus 1.66498 minus 1.11221
+.etc.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.166   issue_
+              date = {May 2010},
+? 
 ! Emergency stop.
-<*> D:/Documents/Kandityö/references-fi.bib
-                                            
+<inserted text> 
+                $
+<to be read again> 
+                   _
+l.166   issue_
+              date = {May 2010},
 End of file on the terminal!
 
 !  ==> Fatal error occurred, no output PDF file produced!
