@@ -9,10 +9,10 @@
 \contentsline {subsection}{\numberline {5.1}Spiraalimalli}{9}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Spiraalimallin etuja ja heikkouksia}{12}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}Rational Unified Process}{12}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}RUPin etuja ja heikkouksia}{14}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.4}RUPin etuja ja heikkouksia}{15}{subsection.5.4}
 \contentsline {section}{\numberline {6}Ketter\IeC {\"a}t menetelm\IeC {\"a}t}{15}{section.6}
-\contentsline {section}{\numberline {7}Ohjelmistojen kehitys nyky\IeC {\"a}\IeC {\"a}n ja tulevaisuudessa}{15}{section.7}
-\contentsline {section}{L\IeC {\"a}hteet}{15}{section*.2}
+\contentsline {section}{\numberline {7}Ohjelmistojen kehitys nyky\IeC {\"a}\IeC {\"a}n ja tulevaisuudessa}{16}{section.7}
+\contentsline {section}{L\IeC {\"a}hteet}{16}{section*.2}
 \select@language {finnish}
 \select@language {finnish}
 \select@language {finnish}
