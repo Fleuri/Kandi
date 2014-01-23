@@ -265,13 +265,7 @@ Kehittelyvaiheen tarkoituksena on selvittää projektiin liittyvät vaatimukset 
 Rakennusvaiheeseen kuuluu käytännön suunnittelu, ohjelmointi ja testaus. Vaiheen lopussa valmiina tulisi olla toimivaa ohjelmistoa ja siihen liittyvä dokumentaatio valmiina käyttöönottoa varten.
 Viimeinen vaihe on siirtymävaihe, jossa ohjelmisto siirretään todelliseeen käyttöympäristöönsä.
 
-\begin{figure}[ht!]
-\centering
-\floatstyle{boxed}
-\includegraphics[width=150mm]{RUP.jpg}
-\caption{RUP-prosessin kuvaus}
-\label{overflow}
-\end{figure}
+
 
 RUPissa iteraatioita voi toteuttaa kahdella tavalla. Yleisempi tapa muista menetelmistä on suorittaa kaikki neljä vaihetta peräkkäin jokaista iteraatiota kohti aina siirtymävaiheesta takaisin aloitusvaiheeseen siirtyen ja inkrementaalisesti ohjelmistoa rakentaen. Toisaalta myös vaiheiden sisällä voidaan suorittaa iteraatioita. Tästä esimerkki kuvassa 3.
 
@@ -286,14 +280,40 @@ RUP myös painottaa valikoitujen parhaitten käytäntöjen hyödyntämistä ohje
 \item \textbf{Hallitse muutoksia ohjelmistoon} Muutosta tulisi hallita niin, että jokainen muutos on hyväksyttävä osa ohjelmistoa ja ne integroituvat ohjelmistoon ristiriidatta.
 \end{enumerate}
 
+\begin{figure}[ht!]
+\centering
+\floatstyle{boxed}
+\includegraphics[width=150mm]{RUP.jpg}
+\caption{RUP-prosessin kuvaus}
+\label{overflow}
+\end{figure}
+
 \subsection{RUPin etuja ja heikkouksia}
 
 RUPin etuna on eri työvaiheiden ja niiden työnkulun erottaminen sekä ohjelmiston käyttöönoton sisällyttäminen työvaiheisiin\cite{Sommerville10}. Lisäksi RUP on tarkasti dokumentoitu, sen iteratiivisuus ja komponenttiarkkitehtuurin suosiminen tuottavat laadukasta ohjelmakoodia.
 
-RUPin heikkouksia ovat sen huono soveltuminen todella laajoihin ohjelmistoprojekteihin\cite{Ramsin:2008:PRO:1322432.1322435, Ruparelia:2010:SDL:1764810.1764814}. RUP ei myöskään huomioi valmiin ohjelmiston ylläpitoa ja käytöstäpoistoa 
+RUPin heikkouksia ovat sen huono soveltuminen todella laajoihin ohjelmistoprojekteihin\cite{Ramsin:2008:PRO:1322432.1322435, Ruparelia:2010:SDL:1764810.1764814}. RUP ei myöskään huomioi valmiin ohjelmiston ylläpitoa ja käytöstäpoistoa\cite{Ramsin:2008:PRO:1322432.1322435}. 
 
 
 \section{Ketterät menetelmät}
+
+Ketterät ohjelmistotuotantomenetelmät eli Agile Methods on kattotermi 2000-luvun keskeisimmälle trendille ohjelmistotuotannossa. Ketterät menetelmät syntyivät reaktiona perinteisten menetelmien vaatimus- ja suunnitelmapainotteisuudelle. Ketterien menetelmien puolestapuhujien mukaan perinteiset menetelmät eivät kykene mukautumaan alan ja teknologian nopeasta muutoksesta johtuviin vaatimuksiin \cite{DBLP:journals/ac/CohenLC04}. Monet ohjelmistotuotantoalan ammattilaiset ehdottivatkin 2000-luvun taitteessa erilaisia ketterämpiä vaihtoehtoja vastaamaan perinteisen vesiputousmallin raskaudesta ja kankeudesta johtuviin ongelmiin. Näihin kuuluvat muun muassa Extreme Programming:in kehittäjä Kent Beck, SCRUMin luojat Ken Schwaber ja Mike Beedle sekä Crystalin luoja Alistair Cockburn\cite{Sommerville10,DBLP:journals/ac/CohenLC04}. Vuodem 2001 helmikuussa ketterien menetelmien keskeisimmät puolestapuhujat kirjoittivat ketterälle liikkeelle keskeisen julistuksen \textit{Agile Manifeston}, suomeksi \textit{Ketterän ohjelmistokehityksen julistus}. Julistus summaa ketterien menetelmien painopisteet suhteessa perinteisiin menetelmiin seuraavasti: 
+
+\begin{quotation}
+Löydämme parempia tapoja tehdä ohjelmistokehitystä, kun teemme sitä
+itse ja autamme muita siinä. Kokemuksemme perusteella arvostamme.
+\begin{itemize}
+
+
+\item\textbf{Yksilöitä ja kanssakäymistä} enemmän kuin menetelmiä ja työkaluja. 
+\item\textbf{Toimivaa ohjelmistoa} enemmän kuin kattavaa dokumentaatiota.
+\item\textbf{Asiakasyhteistyötä} enemmän kuin sopimusneuvotteluja.
+\item\textbf{Vastaamista muutokseen} enemmän kuin pitäytymistä suunnitelmassa.
+\end{itemize}
+Jälkimmäisilläkin asioilla on arvoa, mutta
+arvostamme ensiksi mainittuja enemmän. 
+\end{quotation}
+
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}
 
 % --- References ---
