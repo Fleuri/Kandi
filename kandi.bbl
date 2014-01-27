@@ -39,6 +39,24 @@
 \newblock {\latintext
   \btxurlfont{http://www.ibm.com/developerworks/rational/library/1826.html#N100E4}}.
 
+\bibitem {beck2001agile}
+\btxnamefont {\btxlastnamefont {Beck}, Kent}, \btxnamefont {\btxlastnamefont
+  {Beedle}, Mike}, \btxnamefont {\btxlastnamefont {Bennekum}, Arie~van},
+  \btxnamefont {\btxlastnamefont {Cockburn}, Alistair}, \btxnamefont
+  {\btxlastnamefont {Cunningham}, Ward}, \btxnamefont {\btxlastnamefont
+  {Fowler}, Martin}, \btxnamefont {\btxlastnamefont {Grenning}, James},
+  \btxnamefont {\btxlastnamefont {Highsmith}, Jim}, \btxnamefont
+  {\btxlastnamefont {Hunt}, Andrew}, \btxnamefont {\btxlastnamefont {Jeffries},
+  Ron}, \btxnamefont {\btxlastnamefont {Kern}, Jon}, \btxnamefont
+  {\btxlastnamefont {Marick}, Brian}, \btxnamefont {\btxlastnamefont {Martin},
+  Robert\btxfnamespacelong C.}, \btxnamefont {\btxlastnamefont {Mellor},
+  Steve}, \btxnamefont {\btxlastnamefont {Schwaber}, Ken}, \btxnamefont
+  {\btxlastnamefont {Sutherland}, Jeff}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {\btxlastnamefont {Thomas}, Dave}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Manifesto for agile software development}{Manifesto for
+  Agile Software Development}}, 2001.
+\newblock {\latintext \btxurlfont{http://www.agilemanifesto.org/}}.
+
 \bibitem {Benington:1987:PLC:41765.41799}
 \btxnamefont {\btxlastnamefont {Benington}, H.\btxfnamespacelong
   D.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Production of large
@@ -58,6 +76,14 @@
 \newblock \btxjournalfont {Computer}, 21(5):61--72,
   \btxprintmonthyear{.}{5}{1988}{long}\ifbtxprintISSN {,
   \mbox{\btxISSN~\btxISSNfont {0018-9162}}}.
+
+\bibitem {DBLP:journals/ac/CohenLC04}
+\btxnamefont {\btxlastnamefont {Cohen}, David}, \btxnamefont {\btxlastnamefont
+  {Lindvall}, Mikael}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {\btxlastnamefont {Costa}, Patricia}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An introduction to agile methods}{An introduction to agile
+  methods}}.
+\newblock \btxjournalfont {Advances in Computers}, 62:1--66, 2004.
 
 \bibitem {Dijkstra:1979:HP:1241515.1241525}
 \btxnamefont {\btxlastnamefont {Dijkstra}, E.}\btxauthorcolon\ \btxtitlefont

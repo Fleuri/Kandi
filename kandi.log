@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  23 JAN 2014 08:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  27 JAN 2014 21:10
 entering extended mode
 **kandi.tex
 (D:\Documents\Kandi\kandi.tex
@@ -693,9 +693,21 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks33
 \@floatcapt=\box56
 )
+("D:\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+
+("D:\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count134
+\rotFPtop=\skip57
+\rotFPbot=\skip58
+\rot@float@box=\box57
+\rot@mess@toks=\toks34
+)
 ("D:\MiKTeX 2.9\tex\latex\babelbib\babelbib.sty"
 Package: babelbib 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
-\c@btxromaniannumeral=\count134
+\c@btxromaniannumeral=\count135
 )
 ("D:\MiKTeX 2.9\tex\latex\tocbibind\tocbibind.sty"
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -705,8 +717,8 @@ Package tocbibind Info: The document has section divisions on input line 50.
 Package tocbibind Note: Using section or other style headings.
 
 )
-\c@lau=\count135
-\c@ong=\count136
+\c@lau=\count136
+\c@ong=\count137
  (D:\Documents\Kandi\kandi.aux
 
 LaTeX Warning: Label `overflow' multiply defined.
@@ -715,21 +727,21 @@ LaTeX Warning: Label `overflow' multiply defined.
 LaTeX Warning: Label `overflow' multiply defined.
 
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 116.
  ("D:\MiKTeX 2.9\tex\latex\lm\t1lmr.fd"
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -761,7 +773,7 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 114.
+LaTeX Info: Redefining \microtypecontext on input line 116.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -777,38 +789,38 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 )
 ("D:\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count137
+\scratchcounter=\count138
 \scratchdimen=\dimen152
-\scratchbox=\box57
-\nofMPsegments=\count138
-\nofMParguments=\count139
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count140
+\scratchbox=\box58
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count141
 \MPscratchDim=\dimen153
-\MPnumerator=\count141
-\makeMPintoPDFobject=\count142
-\everyMPtoPDFconversion=\toks35
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks36
 )
-\AtBeginShipoutBox=\box58
-Package hyperref Info: Link coloring OFF on input line 114.
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring OFF on input line 116.
  ("D:\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 ("D:\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count143
+\c@section@level=\count144
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 116.
+LaTeX Info: Redefining \pageref on input line 116.
+LaTeX Info: Redefining \nameref on input line 116.
 
 (D:\Documents\Kandi\kandi.out) (D:\Documents\Kandi\kandi.out)
 \@outlinefile=\write3
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\newline' on input line 114.
+(hyperref)                removing `\newline' on input line 116.
 
 babelbib: Set bibliography fall-back language to finnish
 ("D:\MiKTeX 2.9\tex\latex\babelbib\finnish.bdf"
@@ -819,7 +831,7 @@ babelbib extension \btxifchangecaseoff added to \extrasfinnish
 babelbib: Load BibTeX extensions \bibsfinnish for finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
 babelbib: Set language for keywords in the bibliography fixed to finnish
-Package hyperref Info: Option `pageanchor' set `false' on input line 122.
+Package hyperref Info: Option `pageanchor' set `false' on input line 124.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -854,13 +866,13 @@ Package hyperref Info: Option `pageanchor' set `false' on input line 122.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\sideindent=\skip57
-\lowerspace=\skip58
+\sideindent=\skip59
+\lowerspace=\skip60
 [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Package hyperref Info: Option `pageanchor' set `true' on input line 122.
+Package hyperref Info: Option `pageanchor' set `true' on input line 124.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -941,104 +953,102 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
  [2
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+lmr on input line 137.
+LaTeX Font Info:    Try loading font information for OMS+lmr on input line 139.
 
 
 ("D:\MiKTeX 2.9\tex\latex\lm\omslmr.fd"
 File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 137.
+(Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 139.
 
-Overfull \hbox (20.14645pt too wide) in paragraph at lines 144--147
+Overfull \hbox (20.14645pt too wide) in paragraph at lines 146--149
 \T1/lmr/m/n/12 (-20) oh-jel-mis-to-jen ke-hit-t‰-mi-sel-le. http://steamcommuni
 ty.com/id/vlek2903/inventory/
  []
 
 [1
 
-] [2] [3] [4] [5] <Diagram1.png, id=143, 1532.72626pt x 827.09pt>
+] [2] [3] [4] [5] [6] <Diagram1.png, id=155, 1532.72626pt x 827.09pt>
 File: Diagram1.png Graphic file (type png)
 
 <use Diagram1.png>
-Package pdftex.def Info: Diagram1.png used on input line 197.
-(pdftex.def)             Requested size: 426.79134pt x 230.29634pt.
+Package pdftex.def Info: Diagram1.png used on input line 207.
+(pdftex.def)             Requested size: 682.86613pt x 368.48929pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 197--198
+Overfull \hbox (90.86613pt too wide) in paragraph at lines 207--208
  [][] 
  []
 
-[6] [7pdfTeX warning (ext4): destination with the same identifier (name{figure.
+[7] [8pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.208 
-       <D:/Documents/Kandi/Diagram1.png>]
-Overfull \hbox (5.90468pt too wide) in paragraph at lines 212--212
+l.212 \clearpage
+                 <D:/Documents/Kandi/Diagram1.png>]
+Overfull \hbox (5.90468pt too wide) in paragraph at lines 214--214
 []\T1/lmr/bx/n/17.28 Inkrementaaliset ja ite-ra-tii-vi-set me-ne-tel-m‰t
  []
 
-[8] <spiral.png, id=168, 602.25pt x 501.875pt>
+[9
+
+] [10] <spiral.png, id=187, 602.25pt x 501.875pt>
 File: spiral.png Graphic file (type png)
  <use spiral.png>
-Package pdftex.def Info: spiral.png used on input line 227.
+Package pdftex.def Info: spiral.png used on input line 238.
 (pdftex.def)             Requested size: 426.79134pt x 355.67514pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 227--228
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 238--239
  [][] 
  []
 
-[9] [10pdfTeX warning (ext4): destination with the same identifier (name{figure
-.2}) has been already used, duplicate ignored
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 240.
+
+("D:\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.2}
+) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.239 \end{enumerate}
-                      <D:/Documents/Kandi/spiral.png>] [11] [12]
-Overfull \hbox (20.373pt too wide) in paragraph at lines 278--279
+l.249 \item \textbf
+                   {Tuoteriskit} vaikuttavat kehitett√§v√§n ohjelmiston laat...
+ <D:/Documents/Kandi/spiral.png>] [12]
+<RUP.jpg, id=215, 391.4625pt x 263.48438pt>
+File: RUP.jpg Graphic file (type jpg)
+ <use RUP.jpg>
+Package pdftex.def Info: RUP.jpg used on input line 271.
+(pdftex.def)             Requested size: 426.79134pt x 287.28072pt.
+
+Overfull \hbox (36.79134pt too wide) in paragraph at lines 271--272
+ [][] 
+ []
+
+[13] [14pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.283 
+       <D:/Documents/Kandi/RUP.jpg>]
+Overfull \hbox (20.373pt too wide) in paragraph at lines 290--291
 []\T1/lmr/bx/n/12 Mallinna oh-jel-mis-to vi-su-aa-li-ses-ti \T1/lmr/m/n/12 (-20
 ) RUP suo-sit-te-lee UML-mallinnuskielen
  []
 
-[13] <RUP.jpg, id=219, 391.4625pt x 263.48438pt>
-File: RUP.jpg Graphic file (type jpg)
- <use RUP.jpg>
-Package pdftex.def Info: RUP.jpg used on input line 286.
-(pdftex.def)             Requested size: 426.79134pt x 287.28072pt.
 
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 286--287
- [][] 
- []
-
-
-Overfull \hbox (80.42514pt too wide) in paragraph at lines 295--296
+Overfull \hbox (80.42514pt too wide) in paragraph at lines 301--302
 []\T1/lmr/m/n/12 (-20) RUPin heik-kouk-sia ovat sen huo-no so-vel-tu-mi-nen to-
 del-la laa-joi-hin ohjelmistoprojekteihin[[],
  []
 
-
-Overfull \hbox (18.99278pt too wide) in paragraph at lines 295--296
-[]\T1/lmr/m/n/12 (-20) ]. RUP ei myˆs-k‰‰n huo-mioi val-miin oh-jel-mis-ton yl-
-l‰-pi-toa ja k‰ytˆst‰poistoa[[]]. 
- []
-
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
- has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.298 \section
-              {Ketter√§t menetelm√§t} <D:/Documents/Kandi/RUP.jpg>]
-
-LaTeX Warning: Citation `DBLP:journals/ac/CohenLC04' on page 15 undefined on in
-put line 300.
-
-
-LaTeX Warning: Citation `DBLP:journals/ac/CohenLC04' on page 15 undefined on in
-put line 300.
-
-[15] (D:\Documents\Kandi\kandi.bbl
+[15] [16] (D:\Documents\Kandi\kandi.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1050,14 +1060,6 @@ babelbib: Using the BibTeX style's default font for `ISBN'.
 babelbib: Using the BibTeX style's default font for `ISSN'.
 babelbib: Using the BibTeX style's default font for `url'.
 babelbib: Using the BibTeX style's default font for `numeral'.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 21.
-("D:\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
 Underfull \hbox (badness 2941) in paragraph at lines 19--22
 \T1/lmr/m/it/12 (+20) Teams\T1/lmr/m/n/12 (+20) , 2001.  []$\T1/lmtt/m/n/12 htt
@@ -1070,38 +1072,35 @@ $\T1/lmtt/m/n/12 library / content / 03July / 1000 / 1251 / 1251 _ bestpractice
 s _ TP026B .$
  []
 
-[16]
+[17] [18]
 
 Package babelbib Warning: Handling of numerical editions not handled
-(babelbib)                by language finnish for edition `9' on input line 157
+(babelbib)                by language finnish for edition `9' on input line 183
 .
 
-[17])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 342.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 342.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
  (D:\Documents\Kandi\kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 342.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 342.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
 (rerunfilecheck)             Checksum: 69006921380509DF131D6DAA3B38F37A;1006.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 342.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 349.
  ) 
 Here is how much of TeX's memory you used:
- 9979 strings out of 493921
- 145175 string characters out of 3152895
- 278644 words of memory out of 3000000
- 12890 multiletter control sequences out of 15000+200000
- 51237 words of font info for 100 fonts, out of 3000000 for 9000
+ 10086 strings out of 493921
+ 146520 string characters out of 3152895
+ 280625 words of memory out of 3000000
+ 12993 multiletter control sequences out of 15000+200000
+ 50850 words of font info for 97 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 32i,8n,35p,2223b,592s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 32i,8n,35p,2238b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
 {D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{D:/MiKTeX 2.9/fonts/enc/dvip
 s/lm/lm-rm.enc}{D:/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{D:/MiKTeX 2.9/fonts
 /enc/dvips/lm/lm-mathsy.enc}<D:/MiKTeX 2.9/fonts/type1/public/lm/lmbx12.pfb><D:
@@ -1110,9 +1109,9 @@ m/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/MiKTeX 2.9/fonts
 /type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><D:/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm
 /lmtt12.pfb>
-Output written on kandi.pdf (21 pages, 356472 bytes).
+Output written on kandi.pdf (22 pages, 362242 bytes).
 PDF statistics:
- 325 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
  14464 words of extra memory for PDF output out of 17280 (max. 10000000)
 

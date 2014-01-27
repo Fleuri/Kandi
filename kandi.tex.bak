@@ -35,6 +35,8 @@
 \usepackage{setspace}
 \usepackage{multicol}
 \usepackage{float}
+\usepackage{rotating}
+\usepackage{url}
 
 % Automatically set the PDF metadata fields
 \makeatletter
@@ -125,7 +127,7 @@
 \tableofcontents  % table of contents
 
 % --- Main matter ---
-http://steamcommunity.com/id/vlek2903/inventory/
+
 \mainmatter       % clear page, start arabic page numbering
 
 \section{Johdanto}
@@ -152,12 +154,12 @@ Luvussa 6 otetaan tarkasteluun ketterät ohjelmistotuotantomenetelmät. Vaikka k
 Viimeisessä luvussa käsittelen lyhyesti yhteenvetona tämän hetken vallitsevia ohjelmistotuotantomenetelmiä. Tarkastelen myös mahdollista lähitulevaisuuden trendejä ja mahdollisuuksia
 
 \section{Peruskäsitteistöä}
-Tietojenkäsittelytieteeseen ja ohjelmistotuotantoon liittyy monia alakohtaisia käsitteitä. Kaikkien termien merkitykset eivät ole suoraan johdettavissa itse termistä, sillä osa termistöstä on verrattain vapaita käännöksiä ulkomaisista termeistä ja osa konsepteista on laajoja. Lisäksi joillain termeillä viitataan puhekielessä  vapaammin eri asioihin. Esimerkiksi softwarella voidaan puhekielessä viitata niin yksittäiseen tietokoneohjelmaan kuin laajaan ohjelmistoonkin. Tämän takia lyhyt käsitteenmäärittely tullee tarpeeseen.
+Tietojenkäsittelytieteeseen ja ohjelmistotuotantoon liittyy monia alakohtaisia käsitteitä. Kaikkien termien merkitykset eivät ole suoraan johdettavissa itse termistä, sillä osa termistöstä on verrattain vapaita käännöksiä ulkomaisista termeistä, ja osa konsepteista on laajoja. Lisäksi joillain termeillä viitataan puhekielessä  vapaammin eri asioihin. Esimerkiksi softwarella voidaan puhekielessä viitata niin yksittäiseen tietokoneohjelmaan kuin laajaan ohjelmistoonkin. Tämän takia lyhyt käsitteenmäärittely tullee tarpeeseen.
 
 Software eli ohjelmisto käsittää tietokoneohjelman tai -ohjelmia sekä kaiken niihin liittyvän informaation ja materiaalin kuten tietokannat ja dokumentaation. \newline Tietokonelaitteisto eli hardware käsittää tietokoneen fyysiset osat kuten prosessorin ja kovalevyn. Laitteistoa tarvitaan ohjelmistojen suorittamiseen, ja laitteisto tarvitsee toimiakseen toimintaohjeet matalan tason tietokoneohjelmina. Käytännössä tietokoneohjelmistot ja -ohjelmat sekä tietokonelaitteisto eivät ole käyttökelpoisia yksinään, vaan kumpaakin tarvitaan toisen järkevään käyttöön.
 
-Termi software engineering, suomeksi ohjelmistotuotanto, alkoi esiintyä kirjallisuudessa 1960-luvun puolivälissä. Termi itsessään on ollut usein keskustelun ja väittelyn kohteena ja ohjelmistotuotannon kuulumista insinööritieteisiin on kyseenalaistettu. \cite{DBLP:reference/se/Grier10,haikala2003ohjelmistotuotanto,mahoney04}
-Watts S. Humphrey on määritellyt ohjelmistotuotannon tarkoittavan kurinalaista laadukkaiden ohjelmistojen tuottamista hyödyntäen niin luonnontieteellisiä, matemaattisia kuin insinööritieteidenkin periaatteita ja käytänteitä\cite{Humphrey:1988:SEP:75110.75122}. IEEE Computer Society määrittelee termin viittaavan kurinalaiseen, systemaattiseen ja arvioitavissa olevaan lähestymistapaan ohjelmistojen tuotannossa, käytössä ja ylläpidossa\cite{swebok}. Ilkka Haikala ja Jukka Märijärvi tulkitsevat määrittelyjen tarkoittavan ohjelmistotyötä, jonka tuloksena syntyvät järjestelmät täyttävät käyttäjiensä kohtuulliset toiveet ja odotukset ja tämän lisäksi valmistuvat laadittujen aikataulujen ja kustannusarvioiden puitteissa\cite{haikala2003ohjelmistotuotanto}.
+Termi software engineering, suomeksi ohjelmistotuotanto, alkoi esiintyä kirjallisuudessa 1960-luvun puolivälissä. Termi itsessään on ollut usein keskustelun ja väittelyn kohteena, ja ohjelmistotuotannon kuulumista insinööritieteisiin on kyseenalaistettu. \cite{DBLP:reference/se/Grier10,haikala2003ohjelmistotuotanto,mahoney04}
+Watts S. Humphrey on määritellyt ohjelmistotuotannon tarkoittavan kurinalaista laadukkaiden ohjelmistojen tuottamista hyödyntäen niin luonnontieteellisiä, matemaattisia kuin insinööritieteidenkin periaatteita ja käytänteitä \cite{Humphrey:1988:SEP:75110.75122}. IEEE Computer Society määrittelee termin viittaavan kurinalaiseen, systemaattiseen ja arvioitavissa olevaan lähestymistapaan ohjelmistojen tuotannossa, käytössä ja ylläpidossa \cite{swebok}. Ilkka Haikala ja Jukka Märijärvi tulkitsevat määrittelyjen tarkoittavan ohjelmistotyötä, jonka tuloksena syntyvät järjestelmät täyttävät käyttäjiensä kohtuulliset toiveet ja odotukset ja tämän lisäksi valmistuvat laadittujen aikataulujen ja kustannusarvioiden puitteissa \cite{haikala2003ohjelmistotuotanto}.
 
 Ohjelmistotuotantoon kuuluvat kaikki ohjelmistotuotantoprosessin osa-alueet. Haikala ja Märijärvi \cite{haikala2003ohjelmistotuotanto} määrittelevät ne seuraavasti:
 
@@ -169,76 +171,78 @@ Ohjelmistotuotantoon kuuluvat kaikki ohjelmistotuotantoprosessin osa-alueet. Hai
 \item[Dokumentointi] käsittää ohjelmistoprojektin aikana tuotettavan kirjallisen materiaalin, kuten projektisuunnitelmat, testaussuunnitelmat ja jopa ohjelmakoodin kommentoinnin.
 \item[Käyttöönotto] ja \textbf{ylläpito} ovat asiakkaan ongelmien ratkomista, virheiden korjaamista ja tarvittaessa uusien ominaisuuksien lisäämistä.  
 \item[Laatujärjestelmällä] ja \textbf{laadunvarmistuksella} on tarkoitus taata, että ohjelmisto täyttää käyttäjän ja asiakkaan toiveet ja odotukset.
-\item[Projektinhallinta] on työkalu ohjelmistotuotantoprojektin organisointiin. Suuret ohjelmistoprojektit koostuvat usein useasta rinnakkain tai peräkkäin etenevistä osaprojekteista ja tällöin niiden järjestelmällinen hallinta voi olla keskeistä koko projektin onnistumisen kannalta. 
-\item[Tuotteenhallinta:] Usein kaupallisella ohjelmistolla on useita eri konfiguraatioita jolloin se voidaan aina räätälöidä yksilöllisesti kullekin asiakkaalle sopivaksi. Tuotteenhallinnan tarkoitus on varmistaa, että asiakkaalla on tarvitsemansa toimiva versio ohjelmistosta.
+\item[Projektinhallinta] on työkalu ohjelmistotuotantoprojektin organisointiin. Suuret ohjelmistoprojektit koostuvat usein useasta rinnakkain tai peräkkäin etenevistä osaprojekteista, ja tällöin niiden järjestelmällinen hallinta voi olla keskeistä koko projektin onnistumisen kannalta. 
+\item[Tuotteenhallinta:] Usein kaupallisella ohjelmistolla on useita eri konfiguraatioita, jolloin se voidaan aina räätälöidä yksilöllisesti kullekin asiakkaalle sopivaksi. Tuotteenhallinnan tarkoitus on varmistaa, että asiakkaalla on tarvitsemansa toimiva versio ohjelmistosta.
 \end{description}
 Ohjelmistotuotantomenetelmä on koko ohjelmistotuotantoprosessin kattava viitekehys, joka ohjaa prosessin osa-alueitten käytännön toteutusta.
 
 \section{Ohjelmistotuotannon alkutaival}
-1940-luvun puolivälistä 1950-luvun lopun ensimmäiset ohjelmoitavat elektronisesti tallentavat tietokoneet olivat nykystandardeilla mitattuna valtavan kokoisia, hitaita ja muistikapasiteetiltaan mitättömiä. Rajoitustensa vuoksi tietokoneohjelmointia pidettiin toissijaisena ja yksinkertaisena toimena verrattuna itse tietokonelaitteiston suunnitteluun ja rakentamiseen. \cite{DBLP:reference/se/Grier10} Lähemmin ohjelmoinnin kanssa työskenteleville alkoi selvitä ohjelmoinnin monimutkaisuus ja ongelmat, kuten rajoitetun muistin hallinta ja ohjelmien välinen interaktio. Tarve järjestelmälliselle ohjelmien tuotannolle oli syntymässä.
+1940-luvun puolivälistä 1950-luvun loppuun ensimmäiset ohjelmoitavat elektronisesti tallentavat tietokoneet olivat nykystandardeilla mitattuna valtavan kokoisia, hitaita ja muistikapasiteetiltaan mitättömiä. Rajoitustensa vuoksi tietokoneohjelmointia pidettiin toissijaisena ja yksinkertaisena toimena verrattuna itse tietokonelaitteiston suunnitteluun ja rakentamiseen. \cite{DBLP:reference/se/Grier10} Lähemmin ohjelmoinnin kanssa työskenteleville alkoi selvitä ohjelmoinnin monimutkaisuus ja ongelmat kuten rajoitetun muistin hallinta ja ohjelmien välinen interaktio. Tarve järjestelmälliselle ohjelmien tuotannolle oli syntymässä.
 
-Edsger Dijkstran mukaan alkukantaisilla tietokoneilla ohjelmointi nähtiin tapana venyttää tietokonelaitteiston rajoja ja kehittyneempien tietokoneitten uskottiin tekevän ohjelmoinnista lähes triviaalia kun rajoja ei enää tarvitsisi venyttää. \cite{Dijkstra:1979:HP:1241515.1241525} Niin sanottujen kolmannen sukupolven tietokoneiden tultua markkinoille vuosien 1963 ja 1965 välisenä aikana ohjelmoijat löysivät itsensä kuitenkin uusien ongelmien keskeltä, sillä uusi laitteisto oli myös paljon monimutkaisempi kuin aikaisemmat laitteet. Dijkstra itse summaa suurimpien ongelmien johtuneen kuitenkin tietokonelaitteiston tehokkuuden valtavasta tehokkuuden kasvusta: \begin{quote}
+Edsger Dijkstran mukaan alkukantaisilla tietokoneilla ohjelmointi nähtiin tapana venyttää tietokonelaitteiston rajoja ja kehittyneempien tietokoneitten uskottiin tekevän ohjelmoinnista lähes triviaalia kun rajoja ei enää tarvitsisi venyttää. \cite{Dijkstra:1979:HP:1241515.1241525} Niin sanottujen kolmannen sukupolven tietokoneiden tultua markkinoille vuosien 1963 ja 1965 välisenä aikana ohjelmoijat löysivät itsensä kuitenkin uusien ongelmien keskeltä, sillä uusi laitteisto oli myös paljon monimutkaisempi kuin aikaisemmat laitteet. Dijkstra itse summaa suurimpien ongelmien johtuneen kuitenkin tietokonelaitteiston tehokkuuden valtavasta kasvusta: \begin{quote}
 Niin kauan kun ei ollut koneita, ohjelmointi ei ollut mikään ongelma; kun meillä oli muutama heikko tietokone, ohjelmointi oli vähäinen ongelma. Nyt kun meillä on giganttisia tietokoneita, on ohjelmoinnista tullut yhtä giganttinen ongelma! \cite{Dijkstra:1979:HP:1241515.1241525}
-\end{quote} Tietotekniikkayritysten hankkiessa uutta tehokkaampaa laitteistoa seurasi luonnollisesti paine myös hyödyntää niiden kapasiteettia. Sen lisäksi, että ohjelmoijat joutuivat kohtaamaan haasteita ja toteuttamaan ratkaisuja joita oli aikaisemmin vain spekuloitu \cite{Dijkstra:1979:HP:1241515.1241525}, huomattiin että koulutetusta tietotekniikka-alan työntekijöistä alkoi olla pulaa kysynnän vain kasvaessa. \cite{DBLP:reference/se/Grier10} Ohjelmistoprojektit alkoivat kallistua ja yhä useammin ne ylittivät reilusti budjettinsa ja aikataulunsa mikäli valmistuivat koskaan.\cite{CHAOS1994} Tätä vaihetta tietotekniikan historiassa on myöhemmin kutsuttu nimellä ohjelmistokriisi, software crisis. Dijkstran mukaan ilmiö tunnustettiin avoimesti vuoden 1968 Naton ohjelmistotuotantokonferenssissa Saksan Garmischissa \cite{Dijkstra:1979:HP:1241515.1241525}. Tapahtuma oli merkittävä myös siksi, että termi Software Engineering käytettiin tuolloin ensi kertaa suuressa virallisessa yhteydessä. Tapahtumassa käsiteltyyn myös ohjelmistojen tuotanto ja laaduvalvontasykliä, koodin uusiokäyttöä sekä insinööritieteiden soveltamista ohjelmistojen tuotantoon. \cite{DBLP:reference/se/Grier10}
+\end{quote} Tietotekniikkayritysten hankkiessa uutta tehokkaampaa laitteistoa seurasi luonnollisesti paine myös hyödyntää niiden kapasiteettia. Sen lisäksi, että ohjelmoijat joutuivat kohtaamaan haasteita ja toteuttamaan ratkaisuja joita oli aikaisemmin vain spekuloitu \cite{Dijkstra:1979:HP:1241515.1241525}, huomattiin että koulutetusta tietotekniikka-alan työntekijöistä alkoi olla pulaa kysynnän vain kasvaessa. \cite{DBLP:reference/se/Grier10} Ohjelmistoprojektit alkoivat kallistua, ja yhä useammin ne ylittivät reilusti budjettinsa ja aikataulunsa mikäli valmistuivat koskaan.\cite{CHAOS1994} Tätä vaihetta tietotekniikan historiassa on myöhemmin kutsuttu nimellä ohjelmistokriisi, software crisis. Dijkstran mukaan ilmiö tunnustettiin avoimesti vuoden 1968 Naton ohjelmistotuotantokonferenssissa Saksan Garmischissa \cite{Dijkstra:1979:HP:1241515.1241525}. Tapahtuma oli merkittävä myös siksi, että termi Software Engineering käytettiin tuolloin ensi kertaa suuressa virallisessa yhteydessä. Tapahtumassa käsiteltiin myös ohjelmistojen tuotanto- ja laaduvalvontasykliä, koodin uusiokäyttöä sekä insinööritieteiden soveltamista ohjelmistojen tuotantoon. \cite{DBLP:reference/se/Grier10}
 
 
 
 \section{Perinteiset ohjelmistotuotantomenetelmät}
 
-Perinteisillä ohjelmistotuotantomenetelmillä viitataan suunnitelmavetoisiin tuotantomenetelmiin, joita määrittää projektin alussa suoritettava laaja vaatimusmäärittely ja yksityiskohtainen suunnittelu ja niitä sarjallisesti seuraavat toteutus-, testaus- ja käyttöönottovaiheet. Menetelmien lineaarisen etenemisen ja 'soljumisen' vaiheesta toiseen vuoksi niitä kutsutaan myös kattotermillä 'vesiputousmalli'. Ensimmäisen kerran mallin dokumentoi H.D. Benington vuonna 1956 artikkelissaan \textit{Production of large computer programs}. \cite{Ruparelia:2010:SDL:1764810.1764814, Benington:1987:PLC:41765.41799} Tohtori Winston Royce julkaisi vuonna 1970 paljon keskustelua herättäneen tekstinsä \textit{Managing the Development of Large Software Systems}. Artikkelissa Royce esittelee yksinkertaisen vesiputousmallin, mutta esittää sitä kohtaan kritiikkiä esittäen siitä iteratiivisempia versioita. Siitä huolimatta, että Roycen oma suositus oli tehdä vesiputousmallin vaiheet kahdesti aluksi tuottaen prototyypin ja myöhemmin varsinaisen tuotteen, artikkeliin on viitattu vesiputousmallin keskeisenä hahmotelmana.
+Perinteisillä ohjelmistotuotantomenetelmillä viitataan suunnitelmavetoisiin tuotantomenetelmiin, joita määrittää projektin alussa suoritettava laaja vaatimusmäärittely ja yksityiskohtainen suunnittelu, ja niitä sarjallisesti seuraavat toteutus-, testaus- ja käyttöönottovaiheet. Menetelmät etenevät lineaarisesti vaiheesta toiseen, ja tämän vuoksi niitä kutsutaan yleisesti kattotermillä 'vesiputousmalli'. Ensimmäisen kerran mallin dokumentoi H.D. Benington vuonna 1956 artikkelissaan \textit{Production of large computer programs} \cite{Benington:1987:PLC:41765.41799}. \cite{Ruparelia:2010:SDL:1764810.1764814} Tohtori Winston Royce julkaisi vuonna 1970 paljon keskustelua herättäneen tekstinsä \textit{Managing the Development of Large Software Systems} \cite{Royce1970}. Artikkelissa Royce esittelee yksinkertaisen vesiputousmallin, mutta esittää sitä kohtaan kritiikkiä esittäen siitä iteratiivisempia versioita. Siitä huolimatta, että Roycen oma suositus oli tehdä vesiputousmallin vaiheet kahdesti aluksi tuottaen prototyypin ja myöhemmin varsinaisen tuotteen, artikkeliin on viitattu vesiputousmallin keskeisenä hahmotelmana.
 
 \subsection{Vesiputousmallin rakenne}
 
-Vesiputousmalli koostuu toisiaan seuraavista työvaiheista, joista seuraava aloitetaan aina edellisen valmistuttua. Ajalleen tyypillisesti malli muistuttaa insinööritieteiden suunnitteluprosessia, jossa ennen projektin konkreettista toteuttamista tehdään perinpohjaiset suunnitelmat dokumentointeineen. Niin Benningtonin kuin Roycenkin mallin ensimmäiset askeleet liittyvät projektin vaatimusten määrittelyyn ja kartoitukseen. Roycen mallin ensimmäiset askeleet ovat järjestelmävaatimukset ja ohjelmistovaatimukset\cite{Royce1970}. Benington esittää vaiheet vähän laajemmin aloittaen korkeatasoisella ja yleisluontoisella toimintasuunnitelmavaiheella. Vaiheeseen kuuluu asiakasvaatimukset sekä projektin ajalliset ja budjetilliset vaatimukset. Toimintasuunnitelmavaihetta seuraa toiminnalliset määrittelyt ja laitteistospesifikaatiot. \cite{Benington:1987:PLC:41765.41799} Näiden pohjalta määritellään itse ohjelmiston toiminnalliset-, tehokkuus-, käyttö- ja laatuvaatimukset. Royce painotti dokumentaation tärkeyttä projektin onnistumisen kannalta ja alkuvaiheiden valmistuttua tuloksena tulisi olla määrittelydokumentti ja alustava suunnitteludokumentti. Kun vaatimukset on määritelty siirrytään analyysivaiheeseen, jossa selvitetään vaatimusten tekniset yksityiskohdat. Analyysin perusteella suunnitellaan lopulta itse ohjelmiston yksityiskohdat, joihin kuuluvat muun muassa ohjelmiston arkkitehtuuri, rajapinnat, käyttöliittymä ja testaus. Roycen mukaan suunnitteluvaiheen lopuksi dokumentoituna tulisi olla ohjelmiston lopullinen suunnitelma, käyttöliittymäsuunnitelma sekä ohjelmiston testaussuunnitelma. Ohjelmointivaihe toteutetaan suunnitelmien pohjalta ja niitä seuraten. Ohjelmointivaiheen ollessa ohitse siirrytään testausvaiheeseen, jossa ohjelman eri moduulit testataan yhdessä ja erikseen testaussuunnitelman pohjalta. Lopputuotoksena saadaan dokumentti testauksen tuloksista. Viimeinen vaihe on ohjelmiston käyttöönotto ja ylläpito. Tähän vaiheeseen kuuluu mahdollisten käytössä löydettyjen virheiden korjaaminen ja ohjelmiston muuttaminen tai siihen ominaisuuksien lisääminen mikäli tarve sille syntyy.
-
-\begin{figure}[ht!]
-\centering
-\floatstyle{boxed}
-\includegraphics[width=150mm]{Diagram1.png}
-\caption{Wilson Roycen näkemystä mukaileva vesiputousmalli}
-\label{overflow}
-\end{figure}
-
+Vesiputousmalli koostuu toisiaan seuraavista työvaiheista, joista seuraava aloitetaan aina edellisen valmistuttua. Ajalleen tyypillisesti malli muistuttaa insinööritieteiden suunnitteluprosessia, jossa ennen projektin konkreettista toteuttamista tehdään perinpohjaiset suunnitelmat dokumentointeineen. Niin Benningtonin kuin Roycenkin mallin ensimmäiset askeleet liittyvät projektin vaatimusten määrittelyyn ja kartoitukseen. Roycen mallin ensimmäiset askeleet ovat järjestelmävaatimukset ja ohjelmistovaatimukset\cite{Royce1970}. Benington esittää vaiheet vähän laajemmin aloittaen korkeatasoisella ja yleisluontoisella toimintasuunnitelmavaiheella. Vaiheeseen kuuluvat asiakasvaatimukset sekä projektin ajalliset ja budjetilliset vaatimukset. Toimintasuunnitelmavaihetta seuraavat toiminnalliset määrittelyt ja laitteistospesifikaatiot. \cite{Benington:1987:PLC:41765.41799} Näiden pohjalta määritellään itse ohjelmiston toiminnalliset-, tehokkuus-, käyttö- ja laatuvaatimukset. Royce painotti dokumentaation tärkeyttä projektin onnistumisen kannalta, ja alkuvaiheiden valmistuttua tuloksina tulisivat olla määrittelydokumentti ja alustava suunnitteludokumentti. Kun vaatimukset on määritelty, siirrytään analyysivaiheeseen, jossa selvitetään vaatimusten tekniset yksityiskohdat. Analyysin perusteella suunnitellaan lopulta itse ohjelmiston yksityiskohdat, joihin kuuluvat muun muassa ohjelmiston arkkitehtuuri, rajapinnat, käyttöliittymä ja testaus. Roycen mukaan suunnitteluvaiheen lopuksi dokumentoituina tulisivat olla ohjelmiston lopullinen suunnitelma, käyttöliittymäsuunnitelma sekä ohjelmiston testaussuunnitelma. Ohjelmointivaihe toteutetaan suunnitelmien pohjalta ja niitä seuraten. Ohjelmointivaiheen ollessa ohitse siirrytään testausvaiheeseen, jossa ohjelman eri moduulit testataan yhdessä ja erikseen testaussuunnitelman pohjalta. Lopputuotoksena saadaan dokumentti testauksen tuloksista. Viimeinen vaihe on ohjelmiston käyttöönotto ja ylläpito. Tähän vaiheeseen kuuluu mahdollisten käytössä löydettyjen virheiden korjaaminen ja ohjelmiston muuttaminen tai siihen ominaisuuksien lisääminen, mikäli tarve sille syntyy.
 
 \subsection{Vesiputousmallin ongelmia}
 
-Koska vesiputousmallille on haettu vaikutteita insinööritieteistä, muistuttaa se paljolti esimerkiksi rakennussuunnitteluprosessia \cite{Sommerville10} Siltaa rakentaessa ennen itse rakentamisen aloittamista suunnitellaan sillan arkkitehtuuri, tehdään lujuuslaskelmat, allokoidaan tarvittavat resurssit ja dokumentoidaan suunnitelmat tarkasti. Tarkasti dokumentoiduilla suunnitelmilla itse rakentamisvaihe voitaisiinkin siirtää ulkopuolisen tahon vastuulle ja näin rakennusalalla usein tehdäänkin. \cite{Fowler05} Rakentaminen nähdään triviaalina ja mekaanisena ohjeiden seuraamisena. Martin Fowlerin mukaan menetelmän ongelmana ohjelmistotuotannossa on se, että suunnitelmien virheet ja heikkoudet ilmenevätkin juuri ohjelmointi- ja testausvaiheissa jolloin ohjelmiston toteutus ei olekaan enää kovin suoraviivaista. Juuri suunnittelun korostamisessa piilee myös yksi vesiputousmallin kritisoiduimmista piirteistä. Vesiputousmalli nojaa kokonaisvaltaiseen suunnitteluun ja suunnitelman noudattamiseen, mutta ohjelmistojen kehittäminen tapahtuu usein nopeasti muuttuvassa liiketoimintaympäristössä. Käytännössä on usein mahdotonta selvittää kaiken kattavia ja ulkoisille muutospaineille immuuneja järjestelmä- ja ohjelmistovaatimuksia. \cite{Sommerville10} 
+Koska vesiputousmallille on haettu vaikutteita insinööritieteistä, muistuttaa se paljolti esimerkiksi rakennussuunnitteluprosessia \cite{Sommerville10}. Siltaa rakentaessa ennen itse rakentamisen aloittamista suunnitellaan sillan arkkitehtuuri, tehdään lujuuslaskelmat, allokoidaan tarvittavat resurssit ja dokumentoidaan suunnitelmat tarkasti. Tarkasti dokumentoiduilla suunnitelmilla itse rakentamisvaihe voitaisiinkin siirtää ulkopuolisen tahon vastuulle, ja näin rakennusalalla usein tehdäänkin. \cite{Fowler05} Rakentaminen nähdään triviaalina ja mekaanisena ohjeiden seuraamisena. Martin Fowlerin mukaan menetelmän ongelmana ohjelmistotuotannossa on se, että suunnitelmien virheet ja heikkoudet ilmenevätkin juuri ohjelmointi- ja testausvaiheissa, jolloin ohjelmiston toteutus ei olekaan enää kovin suoraviivaista. Juuri suunnittelun korostamisessa piilee myös yksi vesiputousmallin kritisoiduimmista piirteistä. Vesiputousmalli nojaa kokonaisvaltaiseen suunnitteluun ja suunnitelman noudattamiseen, mutta ohjelmistojen kehittäminen tapahtuu usein nopeasti muuttuvassa liiketoimintaympäristössä. Käytännössä on usein mahdotonta selvittää kaiken kattavia ja ulkoisille muutospaineille immuuneja järjestelmä- ja ohjelmistovaatimuksia. \cite{Sommerville10} 
 
-Joskus todelliset vaatimuksetkin selviävät vasta ohjelmistoa oikeassa ympäristössä käytettäessä. Teoriassa hyvä suunnitelma voi osoittautua huonoksi myöhemmissä konkreettisimmissa työvaiheissa, mutta vesiputousmallin rakenne vaikeuttaa muutoksien tekemistä suunnitelmiin. Managing the Development of Large Software Systems -artikkelissa Royce esittääkin, että vaiheiden välillä tulisi olla takaisinkytkentöjä, jolloin uutta tietoa saadessa voitaisiin palata korjaamaan aikaisempien työvaiheiden virheitä. \cite{Royce1970} Lisäksi Royce ehdotti, että prosessi kannattaisi suorittaa kahdesti. Esimerkiksi neljänkymmenen kuukauden projektissa ensimmäiset kymmenen kuukautta voisi Roycen mukaan käyttää prototyypin rakentamiseen, jonka pohjalta loput kolmekymmentä kuukautta käytettäiisiin varsinaisen ohjelmiston kehittämiseen.
+Joskus todelliset vaatimuksetkin selviävät vasta ohjelmistoa oikeassa ympäristössä käytettäessä. Teoriassa hyvä suunnitelma voi osoittautua huonoksi myöhemmissä konkreettisimmissa työvaiheissa, mutta vesiputousmallin rakenne vaikeuttaa muutoksien tekemistä suunnitelmiin. Managing the Development of Large Software Systems -artikkelissa \cite{Royce1970} Royce esittääkin, että vaiheiden välillä tulisi olla kuvassa 1 havainnollistettuja takaisinkytkentöjä, jolloin uutta tietoa saadessa voitaisiin palata korjaamaan aikaisempien työvaiheiden virheitä. Lisäksi Royce ehdotti, että prosessi kannattaisi suorittaa kahdesti. Esimerkiksi neljänkymmenen kuukauden projektissa ensimmäiset kymmenen kuukautta voisi Roycen mukaan käyttää prototyypin rakentamiseen, jonka pohjalta loput kolmekymmentä kuukautta käytettäiisiin varsinaisen ohjelmiston kehittämiseen.
 
 Toisaalta mikäli ohjelmiston vaatimukset pystytään määrittelemään tarpeeksi tarkasti, esimerkiksi ohjelmiston ollessa sidoksissa johonkin valmiiseen laitteistoon, voi vesiputousmalli olla hyvinkin toimiva ratkaisu suuren työryhmän työskentelyn ohjaukseen.
 
+\begin{sidewaysfigure}[clockwise]
+\centering
+\floatstyle{boxed}
+\includegraphics[width=240mm]{Diagram1.png}
+\caption{Wilson Roycen näkemystä mukaileva vesiputousmalli}
+\label{overflow}
+
+\end{sidewaysfigure}
+\clearpage
 
 \section{Inkrementaaliset ja iteratiiviset menetelmät sekä prototyyppaus}
 
-Inkrementaalisia ja iteratiivisia ohjelmistotuotantomenetelmiä pidetään yleensä vastauksena vesiputousmallin ongelmiin. Ominaista inkrementaalisille ja iteratiivisille malleille onkin dokumenttijohtoisen lineaarisesti etenevän tuotantoprosessin välttäminen hyödyntäen muun muassa aikaan sidottuja iteraatioita, evolutiivista kehittämistä ja palautteen mukaan ohjautuvaa kehittämistä. \cite{larman03} Menetelmät perustuvat ohjelmiston vaiheittaiseen kehittämiseen, jossa joka kehitysvaihetta arvioidaan ja arvioiden pohjalta kehitetään paranneltu versio kunnes vaadittu järjestelmä on valmis. \cite{Sommerville10}
+Inkrementaalisia ja iteratiivisia ohjelmistotuotantomenetelmiä pidetään yleensä vastauksena vesiputousmallin ongelmiin. Ominaista inkrementaalisille ja iteratiivisille malleille onkin dokumenttijohtoisen lineaarisesti etenevän tuotantoprosessin välttäminen hyödyntäen muun muassa aikaan sidottuja iteraatioita, evolutiivista kehittämistä ja palautteen mukaan ohjautuvaa kehittämistä. \cite{larman03} Menetelmät perustuvat ohjelmiston vaiheittaiseen kehittämiseen, jossa joka kehitysvaihetta arvioidaan ja arvioiden pohjalta kehitetään paranneltu versio, kunnes vaadittu järjestelmä on valmis. \cite{Sommerville10}
 Tunnettuja inkrementaalisia ja iteratiivisia ohjelmistokehitysmenetelmiä ovat muun muassa Extreme Programming eli XP, Rapid Application Development eli RAD, Spiraalimalli ja Rational Unified Process eli RUP. Kahta jälkimmäistä tarkastelen lähemmin vielä myöhemmin.
 
-Iteratiiviset ja inkrementaaliset menetelmät nousivat suuren yleisön tietoisuuteen joulukuussa 1994 kun Yhdysvaltain puolustusministeriö julkaisi uuden standardin Mil-Std-498, jonka keskeisin muutos aikaisempaan oli iteratiivisten ja inkrementaalisten ohjelmistokehitysmenetelmien salliminen vesiputousmallin lisäksi. Kuitenkin malleja oli tunnettu ja käytetty paljon aikaisemmin. Basil ja Larman siteeraavat artikkelissaan \textit{Iterative and Incremental Development: A Brief History} NASAn Project Mercuryssa vuonna 1957 työskennellyttä Gerald M. Weinbergia, jonka mukaan projektissa hyödynnettiin erottamattomasti XP:n kaltaista iteratiivista ohjelmistotuotantomenetelmää. Yhdysvaltain puolustusministeriön projektien ulkopuolella muun muassa IBM ja TRW hyödynsivät inkrementaalisia ja iteratiivisia menetelmiä menestyksekkäästi esimerkiksi NASAn suurissa projekteissa 70-luvulla.\cite{larman03} 80-luvun alun tekoälyprojektit hyödynsivät laajalti evolutiivista prototyyppaamista. Eräänä 80-luvun keskeisimmistä merkkipaaluista iteratiivisten ja inkrementaalisten ohjelmistotuotantomenetelmien kannalta pidetään Barry Boehmin vuonna 1986 julkaisemaa artikkelia \textit{A Spiral Model of Software Development and Enhancement} jossa spiraalimalli esiteltiin ja jossa formalisoitiin konsepti riskien ohjaamista iteraatioista. 
-90-luvulla formalisoitiin monia muitakin tunnettuja iteratiivisia ja inkrementaalisia ohjelmistotuotantomenetelmiä, kuten DSDM, XP ja Scrum josta tuli 2000-luvulla ketterän ohjelmistokehityksen keskeisimpiä menetelmiä.
+Iteratiiviset ja inkrementaaliset menetelmät nousivat suuren yleisön tietoisuuteen joulukuussa 1994 kun Yhdysvaltain puolustusministeriö julkaisi uuden standardin Mil-Std-498, jonka keskeisin muutos aikaisempaan oli iteratiivisten ja inkrementaalisten ohjelmistokehitysmenetelmien salliminen vesiputousmallin lisäksi. Kuitenkin malleja oli tunnettu ja käytetty paljon aikaisemmin. Basil ja Larman siteeraavat artikkelissaan \textit{Iterative and Incremental Development: A Brief History} \cite{larman03} NASAn Project Mercuryssa vuonna 1957 työskennellyttä Gerald M. Weinbergia, jonka mukaan projektissa hyödynnettiin erottamattomasti XP:n kaltaista iteratiivista ohjelmistotuotantomenetelmää. Yhdysvaltain puolustusministeriön projektien ulkopuolella muun muassa IBM ja TRW hyödynsivät inkrementaalisia ja iteratiivisia menetelmiä menestyksekkäästi esimerkiksi NASAn suurissa projekteissa 70-luvulla.\cite{larman03} 80-luvun alun tekoälyprojektit hyödynsivät laajalti evolutiivista prototyyppaamista. Eräänä 80-luvun keskeisimmistä merkkipaaluista iteratiivisten ja inkrementaalisten ohjelmistotuotantomenetelmien kannalta pidetään Barry Boehmin vuonna 1986 julkaisemaa artikkelia \textit{A Spiral Model of Software Development and Enhancement} \cite{Boehm:1988:SMS:45797.45801} jossa spiraalimalli esiteltiin ja jossa formalisoitiin konsepti riskien ohjaamista iteraatioista. 
+90-luvulla formalisoitiin monia muitakin tunnettuja iteratiivisia ja inkrementaalisia ohjelmistotuotantomenetelmiä, kuten RUP, RAD ja XP \cite{larman03} josta tuli 2000-luvulla ketterän ohjelmistokehityksen keskeisimpiä menetelmiä.
 
 \subsection{Spiraalimalli}
 
 Barry Boehmin spiraalimalli on iteraatioittain etenevä ohjelmistotuotantomenetelmä. Spiraalimallille ominaista on kehittämisen ohjautuminen riskien ja niiden hallinan mukaan, kun esimerkiksi vesiputousmallissa kehitys ohjautuu suunnitelmien ja määrittelyjen mukaan. Spiraalimalli on siitäkin erikoinen menetelmä, että sen puitteissa pystyy käyttämään niin lineaarisia, inkrementaalisia kuin evolutiivisia työprosesseja riippuen ohjelmiston sen hetkisestä tilasta ja siihen liittyvistä riskeistä ja suunnitelmista. 
 
+Spiraalimallia ja sen kierroksia on havainnollistettu kuvassa 2. Jokainen kierros spiraalissa edustaa yhtä vaihetta ohjelmistoprosessissa. Yksi kierros koostuu neljästä järjestyksessä toistuvasta työvaiheesta \cite{Sommerville10}:
+
+\begin{enumerate}
+\item \textbf{Tavoitteen määrittely:} Työvaiheen tavoitteet määritellään, vaiheeseen ja tuotteeseen kohdistuvat rajoitteet ja riskit tunnistetaan. Laaditaan toimintasuunnitelma sekä riskeistä riippuen vaihtoehtoisia suunnitelmia.
+\item \textbf{Riskien arviointi ja minimointi:} Jokainen tunnistettu riski analysoidaan yksityiskohtaisesti, ja analyysin pohjalta toimitaan riskien uhkien pienentämiseksi. Esimerkiksi, jos riskinä on ohjelmiston vaatimusten epätarkkuus, voidaan riskien minimoimiseksi alkaa kehittää ohjelmiston prototyyppimallia. 
+\item \textbf{Kehitys ja validointi:} Riskien arvioinnin jälkeen valitaan järjestelmälle tuotantomalli. Jos esimerkiksi käyttöliittymään liittyvät riskit ovat hallitsevia, voi hyvä malli kehittämiselle olla evolutiivinen prototyyppaus kun taas tilanteessa, jossa alijärjestelmien integrointi pääohjelmistoon on suurin riskien lähde, voi vesiputousmalli olla paras lähestymistapa.
+\item \textbf{Seuraavan vaiheen suunnittelu: } Projekti katselmoidaan projektille keskeisten ihmisten ja organisaatioiden toimesta, ja mikäli päätetään suorittaa seuraava spiraalin kierros, se sekä siihen varatut resurssit suunnitellaan.
+\end{enumerate}
+
 \begin{figure}[ht!]
 \centering
 \floatstyle{boxed}
 \includegraphics[width=150mm]{spiral.png}
-\caption{Barry Boehmin spiraalimalli}
+\caption{Boehmin spiraalimalli}
+(Lähde: Wikimedia Commons, \url{http://upload.wikimedia.org/wikipedia/commons/e/ec/Spiral_model_%28Boehm%2C_1988%29.svg} 
 \label{overflow}
 \end{figure}
 
-Jokainen kierros spiraalissa edustaa yhtä vaihetta ohjelmistoprosessissa.  Yksi kierros koostuu neljästä järjestyksessä toistuvasta työvaiheesta \cite{Sommerville10}:
 
-\begin{enumerate}
-\item \textbf{Tavoitteen määrittely:} Työvaiheen tavoitteet määritellään, vaiheeseen ja tuotteeseen kohdistuvat rajoitteet ja riskit tunnistetaan. Laaditaan toimintasuunnitelma sekä riskeistä riippuen vaihtoehtoisia suunnitelmia.
-\item \textbf{Riskien arviointi ja minimointi:} Jokainen tunnistettu riski analysoidaan yksityiskohtaisesti ja toimitaan riskien uhkien pienentämiseksi. Esimerkiksi, jos riskinä on ohjelmiston vaatimusten epätarkkuus, voidaan riskien minimoimiseksi alkaa kehittää ohjelmiston prototyyppimallia. 
-\item \textbf{Kehitys ja validointi:} Riskien arvioinnin jälkeen valitaan järjestelmälle tuotantomalli. Jos esimerkiksi käyttöliittymään liittyvät riskit ovat hallitsevia, voi hyvä malli kehittämiselle olla evolutiivinen prototyyppaus kun taas tilanteessa, jossa alijärjestelmien integrointi pääohjelmistoon on suurin riskien lähde, voi vesiputousmalli olla paras lähestymistapa.
-\item \textbf{Seuraavan vaiheen suunnittelu: } Projekti katselmoidaan projektille keskeisten ihmisten ja organisaatioiden toimesta ja mikäli päätetään suorittaa seuraava spiraalin kierros, se sekä siihen varatut resurssit suunnitellaan.
-\end{enumerate}
-
-Riski on spiraalimallin keskeisimpiä käsitteitä. Yksinkertaisesti ilmaistuna riskillä tarkoitetaan tapahtumaa jota halutaan välttää ohjelmistotuotantoprojektissa; Riski on jokin asia joka voi mennä pieleen \cite{Sommerville10}. Riskit jaetaan kolmeen eri kategoriaan, mutta käytännössä osa ohjelmistotuotannon riskeistä voi kuulua useampaankin näistä:
+Riski on spiraalimallin keskeisimpiä käsitteitä. Yksinkertaisesti ilmaistuna riskillä tarkoitetaan tapahtumaa jota halutaan välttää ohjelmistotuotantoprojektissa: riski on jokin asia, joka voi mennä pieleen \cite{Sommerville10}. Riskit jaetaan kolmeen eri kategoriaan, mutta käytännössä osa ohjelmistotuotannon riskeistä voi kuulua useampaankin näistä:
 
 \begin{enumerate}
 \item \textbf{Projektiriskit} ovat projektin aikatauluun tai resursseihin vaikuttavia riskejä. Tällaisia voivat esimerkiksi olla työntekijöiden lähtö projektista tai muutokset projektin johdossa tai organisaatiossa.
@@ -246,28 +250,36 @@ Riski on spiraalimallin keskeisimpiä käsitteitä. Yksinkertaisesti ilmaistuna 
 \item \textbf{Liikeriskit} vaikuttavat ohjelmistoa kehittävään tai tuottavaan organisaatioon. Tällaisia riskejä voivat olla esimerkiksi markkina- ja kilpailutilanteen muutokset tai ohjelmistoprojektissa käytetyn teknologian vanhentuminen. 
 \end{enumerate}
 
-Boehm neuvoo spiraalimallissa käytettävän riskienhallintamenetelmää, jossa aluksi tunnistetaan ja priorisoidaan kymmenen tärkeintä riskiä (Tosin tämä luku ei ole absoluuttinen ja voi vaihdella projektista riippuen) ja niitä varten laaditaan toimintasuunnitelmat. Priorisoitujen riskien listaa päivitetään iteraatioittain ja riskin realisoituessa toimitaan sille laaditun suunnitelman mukaan\cite{Boehm:1988:SMS:45797.45801}. Ian Somervillen mukaan riskinhallintasuunnitelmat voidaan jakaa kolmeen tyyppin: välttämis-, minimointi- ja valmiusstrategioihin\cite{Sommerville10}. Välttämisstrategioilla pyritään pienentämään riskin realisoitumismahdollisuutta. Jos riskinä on esimerkiksi vialliset komponentit, voi välttämisstrategiana toimia komponenttien alihankinta luotettavalta valmistajalta. Minimointistrategioilla pyritään pienentämään riskin toteutuessa aiheutuvaa haittaa ja vahinkoa. Esimerkiksi sairastapausten riskin vaikutusta voidaan minimoida organisoimalla työskentely niin, että kukin kehittäjä ei ole yksinään vastuussa jostain osa-alueesta, vaan tarvittaessa joku toinen voi jatkaa sairaana olevan kehittäjän työtä. Valmiusstrategiat ovat toimintastrategioita jolla varaudutaan pahimpaan tapaukseen riskien realisoituessa. Ohjenuoraksi strategioiden valinnassa Somerville neuvoo lähtökohtaisesti välttämään riskejä. Jos se ei ole mahdollista, niin riskien realisoitumismahdollisuus, ja viime kädessä vaikutukset, tulee minimoida.
+Boehm neuvoo spiraalimallissa käytettävän riskienhallintamenetelmää, jossa aluksi tunnistetaan ja priorisoidaan kymmenen tärkeintä riskiä (Tosin tämä luku ei ole absoluuttinen ja voi vaihdella projektista riippuen) ja niitä varten laaditaan toimintasuunnitelmat. Priorisoitujen riskien listaa päivitetään iteraatioittain ja riskin realisoituessa toimitaan sille laaditun suunnitelman mukaan \cite{Boehm:1988:SMS:45797.45801}. Ian Somervillen mukaan riskinhallintasuunnitelmat voidaan jakaa kolmeen tyyppin: välttämis-, minimointi- ja valmiusstrategioihin\cite{Sommerville10}. Välttämisstrategioilla pyritään pienentämään riskin realisoitumismahdollisuutta. Jos riskinä on esimerkiksi vialliset komponentit, voi välttämisstrategiana toimia komponenttien alihankinta luotettavalta valmistajalta. Minimointistrategioilla pyritään pienentämään riskin toteutuessa aiheutuvaa haittaa ja vahinkoa. Esimerkiksi sairastapausten riskin vaikutusta voidaan minimoida organisoimalla työskentely niin, että kukin kehittäjä ei ole yksinään vastuussa jostain osa-alueesta, vaan tarvittaessa joku toinen voi jatkaa sairaana olevan kehittäjän työtä. Valmiusstrategiat ovat toimintastrategioita, joilla varaudutaan pahimpaan tapaukseen riskien realisoituessa. Ohjenuoraksi strategioiden valinnassa Somerville neuvoo lähtökohtaisesti välttämään riskejä. Jos se ei ole mahdollista, niin riskien realisoitumismahdollisuus, ja viime kädessä vaikutukset, tulee minimoida.
 
 \subsection{Spiraalimallin etuja ja heikkouksia}
 
-Artikkelissaan \textit{A Spiral Model of Software Development and Enhancement} Barry Boehm myös analysoi spiraalimallin hyviä ja huonoja puolia. Spiraalimallin eduiksi hän laskee mahdollisuuden hyödyntää monen olemassaolevan ohjelmistotuotanntomenetelmän hyviä puolia ja välttää huonoja\cite{Boehm:1988:SMS:45797.45801}. Vaihtoehtojen tarkastelu rohkaisee jo olemassa olevan ohjelmiston uusiokäyttöön ja riskianalyysi sekä iteratiivinen malli edesauttavat ohjelmiston muokattavuutta ja laajennettavuutta sekä yleistä laatua. Riskien tuominen keskiöön välttää perinteisempien menetelmien sudenkuopat, jossa helpot asiat suoritetaan ensin riskialttiimpien ja vaikeampien jääden myöhemmiksi\cite{Wolff:1989:MRS:107446.107478}. 
+Artikkelissaan \textit{A Spiral Model of Software Development and Enhancement} \cite{Boehm:1988:SMS:45797.45801} Barry Boehm myös analysoi spiraalimallin hyviä ja huonoja puolia. Spiraalimallin eduiksi hän laskee mahdollisuuden hyödyntää monen olemassaolevan ohjelmistotuotanntomenetelmän hyviä puolia ja välttää huonoja \cite{Boehm:1988:SMS:45797.45801}. Vaihtoehtojen tarkastelu rohkaisee jo olemassa olevan ohjelmiston uusiokäyttöön ja riskianalyysi sekä iteratiivinen malli edesauttavat ohjelmiston muokattavuutta ja laajennettavuutta sekä yleistä laatua. Riskien tuominen keskiöön välttää perinteisempien menetelmien sudenkuopat, jossa helpot asiat suoritetaan ensin riskialttiimpien ja vaikeampien jäädessä myöhemmiksi \cite{Wolff:1989:MRS:107446.107478}. 
 
-Tekstissään Boehm tunnistaa myös mallissa joitain heikkouksia. Koska malli nojaa vahvasti riskien hallintaan, se olettaa käyttäjänsä hallitsevan koko riskien hallinnan konseptin hyvin\cite{Boehm:1988:SMS:45797.45801}. Lisäksi osa mallissa ja sen vaiheissa käytettävistä tekniikoista ja toimintatavoista eivät ole kovin tarkkaan määritelty. Esimerkiksi Gerard Wolff moitti menetelmää selkeyden puutteesta ja suosittelikin Boehmin spiraalimalliin suhtauduttavan vain viitteellisenä kehyksenä projektisuunnitelmalla\cite{Wolff:1989:MRS:107446.107478}. 
+Tekstissään Boehm tunnistaa myös mallissa joitain heikkouksia. Koska malli nojaa vahvasti riskien hallintaan, se olettaa käyttäjänsä hallitsevan koko riskien hallinnan konseptin hyvin\cite{Boehm:1988:SMS:45797.45801}. Lisäksi osa mallissa ja sen vaiheissa käytettävistä tekniikoista ja toimintatavoista eivät ole kovin tarkkaan määritelty. Esimerkiksi Gerard Wolff moitti menetelmää selkeyden puutteesta ja suosittelikin Boehmin spiraalimalliin suhtauduttavan vain viitteellisenä kehyksenä projektisuunnitelmalle \cite{Wolff:1989:MRS:107446.107478}. 
 
  
 \subsection{Rational Unified Process}
 
 Rational Unified Process eli RUP on Rational Software -yhtiön 90-luvulla kehittämä prosessimalli. IBM:n ostettua Rational Softwaren vuonna 2003, on IBM ollut menetelmän keskeisin käyttäjä ja äänitorvi, tarjoten muunmuassa RUPiin liittyviä konsultointipalveluja. 
-RUP on iteratiivinen ohjelmistotuotantomenetelmä joka hyödyntää vahvasti erilaisia malleja, kuten UML, ja käyttötapauksia\cite{Ruparelia:2010:SDL:1764810.1764814}. Mark Aked korostaa myös RUPin olevan riskiohjautuva\cite{Aked03}.
-RUP määrittelee työprosessinsa etenevän iteraatioittain. Jokainen iteraatio sisältää neljä vaihetta: Aloitusvaihe eli inception, tarkentamisvaihe eli elaboration, rakennusvaihe eli construction ja siirtymävaihe eli transition. RUP määrittää myös spesifisti sen, mitä jokaiseen vaiheeseen kuuluu. 
-Aloitusvaiheessa projektille määritellään siihen liittyvät sidosryhmät ja -henkilöt ja muut järjestelmän kanssa tekemisissä olevat tahot. Näitä tietoja käyttäen tarkastellaan projektin taloudellista arvoa ja päätetään jatkosta. Mikäli projekti on taloudellisesti tuottamaton, voidaan sen kehitys lopettaa tässä vaiheessa. 
-Kehittelyvaiheen tarkoituksena on selvittää projektiin liittyvät vaatimukset ja ongelmat sekä määritellä arkkitehtuurinen viitekehys, projektisuunnitelma sekä keskeisimmät riskit ja tuottaa näistä dokumentaatio. UML-kaavioiden laatimista on erikseen korostettu.
+RUP on iteratiivinen ohjelmistotuotantomenetelmä joka hyödyntää vahvasti erilaisia dokumentaatiomalleja, kuten UML-diagrammeja, ja käyttötapauksia \cite{Ruparelia:2010:SDL:1764810.1764814}. Mark Aked korostaa myös RUPin olevan riskiohjautuva \cite{Aked03}.
+RUP määrittelee työprosessinsa etenevän iteraatioittain. Kuvassa 3 nähdään jokaisen iteraation sisältävät neljä vaihetta: Aloitusvaihe eli inception, tarkentamisvaihe eli elaboration, rakennusvaihe eli construction ja siirtymävaihe eli transition. RUP määrittää myös spesifisti sen, mitä jokaiseen vaiheeseen kuuluu. 
+
+\begin{figure}[ht!]
+\centering
+\floatstyle{boxed}
+\includegraphics[width=150mm]{RUP.jpg}
+\caption{RUP-prosessin kuvaus}
+(Lähde: Wikimedia Commons, \url{http://upload.wikimedia.org/wikipedia/fi/f/fa/IteratiivisenMallinVaiheet.JPG}
+\label{overflow}
+\end{figure}
+\pagebreak
+Aloitusvaiheessa projektille määritellään siihen liittyvät sidosryhmät ja -henkilöt ja muut järjestelmän kanssa tekemisissä olevat tahot. Näitä tietoja käyttäen tarkastellaan projektin taloudellista arvoa, ja päätetään jatkotoimista. Mikäli projekti on taloudellisesti tuottamaton, voidaan sen kehitys lopettaa tässä vaiheessa. 
+Kehittelyvaiheen tarkoituksena on selvittää projektiin liittyvät vaatimukset ja ongelmat sekä määritellä arkkitehtuurinen viitekehys, projektisuunnitelma sekä keskeisimmät riskit, ja tuottaa näistä dokumentaatio. UML-kaavioiden laatimista on erikseen korostettu.
 Rakennusvaiheeseen kuuluu käytännön suunnittelu, ohjelmointi ja testaus. Vaiheen lopussa valmiina tulisi olla toimivaa ohjelmistoa ja siihen liittyvä dokumentaatio valmiina käyttöönottoa varten.
 Viimeinen vaihe on siirtymävaihe, jossa ohjelmisto siirretään todelliseeen käyttöympäristöönsä.
 
-
-
-RUPissa iteraatioita voi toteuttaa kahdella tavalla. Yleisempi tapa muista menetelmistä on suorittaa kaikki neljä vaihetta peräkkäin jokaista iteraatiota kohti aina siirtymävaiheesta takaisin aloitusvaiheeseen siirtyen ja inkrementaalisesti ohjelmistoa rakentaen. Toisaalta myös vaiheiden sisällä voidaan suorittaa iteraatioita. Tästä esimerkki kuvassa 3.
+RUPissa iteraatioita voi toteuttaa kahdella tavalla. Ensimmäinen tapa, joka on yleinen myös muissa iteratiivisissa menetelmissä, on suorittaa kaikki neljä vaihetta peräkkäin jokaista iteraatiota kohti aina siirtymävaiheesta takaisin aloitusvaiheeseen siirtyen, ja inkrementaalisesti ohjelmistoa rakentaen. Toisaalta myös vaiheiden sisällä voidaan suorittaa iteraatioita. Esimerkkinä kuvassa 3 tarkentamisvaiheessa suoritetaan kaksi iteraatiota ja rakentamisvaiheessa neljä.
 
 RUP myös painottaa valikoitujen parhaitten käytäntöjen hyödyntämistä ohjelmistokehityksessä. Niitä on listattu kuusi\cite{rational01}: 
 
@@ -280,39 +292,34 @@ RUP myös painottaa valikoitujen parhaitten käytäntöjen hyödyntämistä ohje
 \item \textbf{Hallitse muutoksia ohjelmistoon} Muutosta tulisi hallita niin, että jokainen muutos on hyväksyttävä osa ohjelmistoa ja ne integroituvat ohjelmistoon ristiriidatta.
 \end{enumerate}
 
-\begin{figure}[ht!]
-\centering
-\floatstyle{boxed}
-\includegraphics[width=150mm]{RUP.jpg}
-\caption{RUP-prosessin kuvaus}
-\label{overflow}
-\end{figure}
+
 
 \subsection{RUPin etuja ja heikkouksia}
 
 RUPin etuna on eri työvaiheiden ja niiden työnkulun erottaminen sekä ohjelmiston käyttöönoton sisällyttäminen työvaiheisiin\cite{Sommerville10}. Lisäksi RUP on tarkasti dokumentoitu, sen iteratiivisuus ja komponenttiarkkitehtuurin suosiminen tuottavat laadukasta ohjelmakoodia.
 
-RUPin heikkouksia ovat sen huono soveltuminen todella laajoihin ohjelmistoprojekteihin\cite{Ramsin:2008:PRO:1322432.1322435, Ruparelia:2010:SDL:1764810.1764814}. RUP ei myöskään huomioi valmiin ohjelmiston ylläpitoa ja käytöstäpoistoa\cite{Ramsin:2008:PRO:1322432.1322435}. 
+RUPin heikkouksia ovat sen huono soveltuminen todella laajoihin ohjelmistoprojekteihin\cite{Ramsin:2008:PRO:1322432.1322435, Ruparelia:2010:SDL:1764810.1764814}. RUP ei myöskään huomioi valmiin ohjelmiston ylläpitoa ja käytöstäpoistoa \cite{Ramsin:2008:PRO:1322432.1322435}. 
 
 
 \section{Ketterät menetelmät}
 
-Ketterät ohjelmistotuotantomenetelmät eli Agile Methods on kattotermi 2000-luvun keskeisimmälle trendille ohjelmistotuotannossa. Ketterät menetelmät syntyivät reaktiona perinteisten menetelmien vaatimus- ja suunnitelmapainotteisuudelle. Ketterien menetelmien puolestapuhujien mukaan perinteiset menetelmät eivät kykene mukautumaan alan ja teknologian nopeasta muutoksesta johtuviin vaatimuksiin \cite{DBLP:journals/ac/CohenLC04}. Monet ohjelmistotuotantoalan ammattilaiset ehdottivatkin 2000-luvun taitteessa erilaisia ketterämpiä vaihtoehtoja vastaamaan perinteisen vesiputousmallin raskaudesta ja kankeudesta johtuviin ongelmiin. Näihin kuuluvat muun muassa Extreme Programming:in kehittäjä Kent Beck, SCRUMin luojat Ken Schwaber ja Mike Beedle sekä Crystalin luoja Alistair Cockburn\cite{Sommerville10,DBLP:journals/ac/CohenLC04}. Vuodem 2001 helmikuussa ketterien menetelmien keskeisimmät puolestapuhujat kirjoittivat ketterälle liikkeelle keskeisen julistuksen \textit{Agile Manifeston}, suomeksi \textit{Ketterän ohjelmistokehityksen julistus}. Julistus summaa ketterien menetelmien painopisteet suhteessa perinteisiin menetelmiin seuraavasti: 
+Ketterät ohjelmistotuotantomenetelmät eli Agile Methods on kattotermi 2000-luvun keskeisimmälle trendille ohjelmistotuotannossa. Ketterät menetelmät syntyivät reaktiona perinteisten menetelmien vaatimus- ja suunnitelmapainotteisuudelle. Ketterien menetelmien puolestapuhujien mukaan perinteiset menetelmät eivät kykene mukautumaan alan ja teknologian nopeasta muutoksesta johtuviin vaatimuksiin \cite{DBLP:journals/ac/CohenLC04}. Monet ohjelmistotuotantoalan ammattilaiset ehdottivatkin 2000-luvun taitteessa erilaisia ketterämpiä vaihtoehtoja vastaamaan perinteisen vesiputousmallin raskaudesta ja kankeudesta johtuviin ongelmiin. Näihin kuuluvat muun muassa Extreme Programming:in kehittäjä Kent Beck, SCRUMin luojat Ken Schwaber ja Mike Beedle sekä Crystalin luoja Alistair Cockburn \cite{Sommerville10,DBLP:journals/ac/CohenLC04}. Vuodem 2001 helmikuussa ketterien menetelmien keskeisimmät puolestapuhujat kirjoittivat ketterälle liikkeelle keskeisen julistuksen \textit{Agile Manifeston} \cite{beck2001agile}, suomeksi \textit{Ketterän ohjelmistokehityksen julistus}. Julistus summaa ketterien menetelmien painopisteet ja arvot suhteessa perinteisiin menetelmiin seuraavasti: 
 
 \begin{quotation}
 Löydämme parempia tapoja tehdä ohjelmistokehitystä, kun teemme sitä
 itse ja autamme muita siinä. Kokemuksemme perusteella arvostamme.
 \begin{itemize}
-
-
 \item\textbf{Yksilöitä ja kanssakäymistä} enemmän kuin menetelmiä ja työkaluja. 
 \item\textbf{Toimivaa ohjelmistoa} enemmän kuin kattavaa dokumentaatiota.
 \item\textbf{Asiakasyhteistyötä} enemmän kuin sopimusneuvotteluja.
 \item\textbf{Vastaamista muutokseen} enemmän kuin pitäytymistä suunnitelmassa.
 \end{itemize}
 Jälkimmäisilläkin asioilla on arvoa, mutta
-arvostamme ensiksi mainittuja enemmän. 
+arvostamme ensiksi mainittuja enemmän.\cite{beck2001agile} 
 \end{quotation}
+
+Suurin osa ketterien menetelmien käytänteistä on ollut jo käytössä aikaisemmin. Suurin osa menetelmistä esimerkiksi hyödyntää iteratiivista kehittämistä\cite{DBLP:journals/ac/CohenLC04}. Kuitenkin ketterän kehittämisen arvot ja painotukset erottavat ne aikaisemmista menetelmistä.
+
 
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}
 
