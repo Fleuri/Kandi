@@ -176,6 +176,14 @@
   \mbox{\btxISSN~\btxISSNfont {0163-5948}}}.
 \newblock {\latintext \btxurlfont{http://doi.acm.org/10.1145/1764810.1764814}}.
 
+\bibitem {Schwaber96}
+\btxnamefont {\btxlastnamefont {Schwaber}, Ken}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Controlled chaos: Living on the edge}{Controlled Chaos:
+  Living on the Edge}}.
+\newblock 1996.
+\newblock {\latintext
+  \btxurlfont{http://controlchaos.squarespace.com/storage/scrum-articles/Living%20on%20the%20Edge.pdf}}.
+
 \bibitem {Sommerville10}
 \btxnamefont {\btxlastnamefont {Sommerville}, Ian}\btxauthorcolon\
   \btxtitlefont {Software Engineering}.

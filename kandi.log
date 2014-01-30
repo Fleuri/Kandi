@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  27 JAN 2014 21:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.17)  30 JAN 2014 00:27
 entering extended mode
 **kandi.tex
 (D:\Documents\Kandi\kandi.tex
@@ -969,7 +969,7 @@ ty.com/id/vlek2903/inventory/
 
 [1
 
-] [2] [3] [4] [5] [6] <Diagram1.png, id=155, 1532.72626pt x 827.09pt>
+] [2] [3] [4] [5] [6] <Diagram1.png, id=165, 1532.72626pt x 827.09pt>
 File: Diagram1.png Graphic file (type png)
 
 <use Diagram1.png>
@@ -993,7 +993,7 @@ Overfull \hbox (5.90468pt too wide) in paragraph at lines 214--214
 
 [9
 
-] [10] <spiral.png, id=187, 602.25pt x 501.875pt>
+] [10] <spiral.png, id=197, 602.25pt x 501.875pt>
 File: spiral.png Graphic file (type png)
  <use spiral.png>
 Package pdftex.def Info: spiral.png used on input line 238.
@@ -1020,7 +1020,7 @@ Package microtype Info: Loading generic settings for font family
 l.249 \item \textbf
                    {Tuoteriskit} vaikuttavat kehitettävän ohjelmiston laat...
  <D:/Documents/Kandi/spiral.png>] [12]
-<RUP.jpg, id=215, 391.4625pt x 263.48438pt>
+<RUP.jpg, id=225, 391.4625pt x 263.48438pt>
 File: RUP.jpg Graphic file (type jpg)
  <use RUP.jpg>
 Package pdftex.def Info: RUP.jpg used on input line 271.
@@ -1048,7 +1048,7 @@ Overfull \hbox (80.42514pt too wide) in paragraph at lines 301--302
 del-la laa-joi-hin ohjelmistoprojekteihin[[],
  []
 
-[15] [16] (D:\Documents\Kandi\kandi.bbl
+[15] [16] [17] (D:\Documents\Kandi\kandi.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
 babelbib: Using the BibTeX style's default font for `title'.
@@ -1072,32 +1072,43 @@ $\T1/lmtt/m/n/12 library / content / 03July / 1000 / 1251 / 1251 _ bestpractice
 s _ TP026B .$
  []
 
-[17] [18]
+[18] [19]
+Underfull \hbox (badness 1931) in paragraph at lines 180--186
+[]\T1/lmr/m/n/12 (+20) Schwaber, Ken: \T1/lmr/m/it/12 (+20) Cont-rol-led Chaos:
+ Li-ving on the Ed-ge\T1/lmr/m/n/12 (+20) .  1996.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--186
+[]$\T1/lmtt/m/n/12 http : / / controlchaos . squarespace . com / storage / scru
+m-[]articles /$
+ []
+
 
 Package babelbib Warning: Handling of numerical editions not handled
-(babelbib)                by language finnish for edition `9' on input line 183
+(babelbib)                by language finnish for edition `9' on input line 191
 .
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
- [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 359.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 359.
  (D:\Documents\Kandi\kandi.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 359.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 359.
 Package rerunfilecheck Info: File `kandi.out' has not changed.
-(rerunfilecheck)             Checksum: 69006921380509DF131D6DAA3B38F37A;1006.
+(rerunfilecheck)             Checksum: C9E431EBCDCF0D4930AFD47F3DF72C4C;1161.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 349.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 359.
  ) 
 Here is how much of TeX's memory you used:
- 10086 strings out of 493921
- 146520 string characters out of 3152895
- 280625 words of memory out of 3000000
- 12993 multiletter control sequences out of 15000+200000
+ 10095 strings out of 493921
+ 146648 string characters out of 3152895
+ 280661 words of memory out of 3000000
+ 12998 multiletter control sequences out of 15000+200000
  50850 words of font info for 97 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  32i,8n,35p,2238b,590s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1109,9 +1120,9 @@ m/lmr10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><D:/MiKTeX 2.9/fonts
 /type1/public/lm/lmr6.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><D:/M
 iKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><D:/MiKTeX 2.9/fonts/type1/public/lm
 /lmtt12.pfb>
-Output written on kandi.pdf (22 pages, 362242 bytes).
+Output written on kandi.pdf (23 pages, 368282 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 14464 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 371 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 14480 words of extra memory for PDF output out of 17280 (max. 10000000)
 

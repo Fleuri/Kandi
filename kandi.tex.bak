@@ -318,7 +318,17 @@ Jälkimmäisilläkin asioilla on arvoa, mutta
 arvostamme ensiksi mainittuja enemmän.\cite{beck2001agile} 
 \end{quotation}
 
-Suurin osa ketterien menetelmien käytänteistä on ollut jo käytössä aikaisemmin. Suurin osa menetelmistä esimerkiksi hyödyntää iteratiivista kehittämistä\cite{DBLP:journals/ac/CohenLC04}. Kuitenkin ketterän kehittämisen arvot ja painotukset erottavat ne aikaisemmista menetelmistä.
+Suurin osa ketterien menetelmien käytänteistä on ollut jo käytössä aikaisemmin. Suurin osa menetelmistä esimerkiksi hyödyntää iteratiivista kehittämistä\cite{DBLP:journals/ac/CohenLC04}. Kuitenkin ketterän kehittämisen arvot ja painotukset erottavat ne aikaisemmista menetelmistä. Ketterille menetelmille on ominaista kehittäjien itseohjautuvuus ja keskinäinen, hieararkiaton kommunikaatio, tiivis yhteistyö asiakastahon kanssa ja asiakkaan osallistaminen ja toimivan ohjelmiston tuottaminen ja toimittaminen lyhyissä iteraatioissa.
+
+\subsection{Scrum}
+
+Scrum on Ken Schwaberin vuonna 1996 esittelemä ketterä ohjelmistotuotantomenetelmä \cite{DBLP:journals/ac/CohenLC04}. Schwaberin mukaan Scrum on menetelmä, joka "hyväksyy, että ohjelmistotuotanto on ennalta-arvaamatonta" \cite{Schwaber96}. Projektit jaetaan tarpeeksi pieniin osiin, jolloin ne ovat paremmin hallittavissa. Kehittäjäryhmät pidetään pieninä ryhmän sisäisen kommunikaation maksimoinniksi. Schwaber ehdottaa ryhmän kooksi maksimissaan seitsemää henkeä \cite{Schwaber96}. Kehitettävä ohjelmisto pyritään pitämään jatkuvalla testaamisella, dokumentaatiolla ja integraatiolla sellaisena, että se on teoriassa milloin tahansa valmis käyttöönottoon.
+
+Scrumissa iteraatioita kutsutaan sprinteiksi. Sprintit ovat aikaan sidottuja ja kestävät yhdestä kuuteen viikkoa \cite{Schwaber96}. Ennen jokaista sprinttiä kehittäjäryhmä ja asiakastaho eli Scrum-termein 'product owner' pitävät kokouksen jossa määritellään ja päätetään kyseisessä sprintissä ohjelmistoon toteutettavat ominaisuudet. Jokaisen sprintin lopussa kehittäjäryhmän ja asiakastahon kesken järjestetään kokous, jossa projektin edistymistä analysoidaan ja sprintissä ohjelmistoon toteutetut ominaisuudet katselmoidaan. Näiden kokousten lisäksi Scrumiin kuuluu olennaisesti päivittäin järjestettävät lyhyet kokoukset, daily scrum:it, kehittäjäryhmän kesken. Nämä kokoukset tehostavat kommunikaatiota, pitävät kaikki projektiin liittyvät tahot tietoisina projektin tilasta, auttavat tunnistamaan ongelmia ja pitämään kehittäjätiimin selvillä projektin tavoitteista \cite{DBLP:journals/ac/CohenLC04}. Scrumin kommunikaatiopainotus varmistaa, että tuotettu ohjelmisto on sellaista mitä projektin asiakas haluaa, ja että ohjelmistoa voidaan kehittää niin, että se tuottaa mahdollisimman paljon välitöntä lisäarvoa asiakkaalle muuttuvassa markkina- ja kilpailuympäristössä.
+
+\subsection{Ketterien menetelmien hyviä ja huonoja puolia}
+
+2000-luvulla ketterät menetelmät ovat olleet erittäin suosittuja ja käytössä monessa onnistuneessa ohjelmistotuotantoprojektissa.
 
 
 \section{Ohjelmistojen kehitys nykyään ja tulevaisuudessa}

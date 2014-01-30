@@ -1,6 +1,11 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: kandi.aux
 The style file: babplain-lf.bst
 Database file #1: references-fi.bib
+I was expecting a `,' or a `}'---line 334 of file references-fi.bib
+ : 
+ : year = 2011,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in rational01
 Warning--empty language in rational01
 Warning--empty journal in Aked03
@@ -9,5 +14,6 @@ Warning--empty journal in Fowler05
 Warning--empty publisher in DBLP:reference/se/Grier10
 Warning--there's a number but no volume in mahoney04
 Warning--empty year in mahoney04
+Warning--empty journal in Schwaber96
 Warning--empty booktitle in Wolff:1989:MRS:107446.107478
-(There were 9 warnings)
+(There was 1 error message)
